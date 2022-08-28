@@ -1,0 +1,11 @@
+language: ruby
+before_script:
+- pip install --user awscli
+- rm -rf public
+- bundle exec jekyll build
+script:
+- aws s3 sync site/ s3://tech-writer.massolit-media.com --acl public-read --delete
+- aws cloudfront create-invalidation --distribution-id E21NQPDRXYWYVZ --paths '/*' 
+branches:
+  only:
+  - master
