@@ -1,7 +1,7 @@
 language: ruby
 before_script:
 - pip install --user awscli
-- rm -rf public
+- rm -rf _site
 - bundle exec jekyll build
 script:
 - aws s3 sync _site/ s3://tech-writer.massolit-media.com --acl public-read --delete
