@@ -51,3 +51,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Google Analytics Tracking (Sept. 4, 2022)
+# I got it from the Just the docs documentation and am leaving the anonymize_ip and comment the way it was there
+ga_tracking: UA-46264697-1 # This is my "Universal Analytics" ID, not for Google Analytics 4
+ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
