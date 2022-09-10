@@ -23,7 +23,7 @@ email: massolit.media@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A collection of technical writing samples by me, Philip Tanfield, that demonstrate my expertise around creating technical content related to information technology, information security, and more.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://tech-writer.massolit-media.com/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://tech-writer.massolit-media.com" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
