@@ -21,9 +21,9 @@
 title: Massolit Media Technical Writing Services
 email: massolit.media@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A collection of technical writing samples by me, Philip Tanfield to demonstrate my expertise around creating technical content related to information technology, information security, and more.
+  A collection of technical writing samples by me, Philip Tanfield, that demonstrate my expertise around creating technical content related to information technology, information security, and more.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://tech-writer.massolit-media.com/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
@@ -31,6 +31,19 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 theme: just-the-docs
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Custom SASS/CSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Collections
+collections:
+  security-onion:
+    output: true
+    permalink: /:collection/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -55,4 +68,5 @@ plugins:
 # Google Analytics Tracking (Sept. 4, 2022)
 # I got it from the Just the docs documentation and am leaving the anonymize_ip and comment the way it was there
 ga_tracking: UA-46264697-1 # This is my "Universal Analytics" ID, not for Google Analytics 4
+ga_tracking: G-YGPXTK5FCH # Massolit Media - Google Analytics 4 Measurement ID - added under my own initiative
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
