@@ -59,7 +59,7 @@ If you use SSH keys for authentication, you can add your SSH key pair to the Sec
    * Additional **Tools** that extend what you can do with Security Onion:
 
       * A **Kibana** instance that provides security information and event management (SIEM) functionality.
-      * **Grafana** provides visualizations of the state of your the Security Onion system, with near-real-time reporting of both high-level and very granular system properties, as well as other statistics, such as network activity.
+      * **Grafana** provides visualizations of the state of your Security Onion system, with near-real-time reporting of both high-level and very granular system properties, as well as other statistics, such as network activity.
       * **CyberChef** is an open-source project from Britain's GCHQ, that describes itself as "The Cyber Swiss Army Knife -- a web app for encryption, encoding, compression and data analysis."
       * **Playbook** is a tool that allows you "to create a Detection Playbook, which itself consists of individual Plays. These Plays are fully self-contained and describe the different aspects around a particular detection strategy."
       * **FleetDM** is a tool that "asks questions about your servers, containers, and laptops running Linux, Windows, and macOS."

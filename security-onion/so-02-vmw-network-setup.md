@@ -9,7 +9,7 @@ parent: "Security Onion Virtual Lab Tutorial: Introduction"
 
 These steps detail how you can use VMware Fusion Pro's networking capabilities to create two private virtual networks. You will connect your different virtual machines (VMs) to these networks so that the VMs can interact with one another, and reach out to the public internet to download updates, browse the internet, etc.
 
-**Note:** Per [VMware's documentation](https://docs.vmware.com/en/VMware-Fusion/12/com.vmware.fusion.using.doc/GUID-DEB1FB99-0E44-4AAA-9693-6C2687098F13.html), "private virtual networks (vmnet) configurations... only allow communication between virtual machines and the host system."
+**Note:** Per [VMware's documentation](https://docs.vmware.com/en/VMware-Fusion/12/com.vmware.fusion.using.doc/GUID-DEB1FB99-0E44-4AAA-9693-6C2687098F13.html){:target="_blank"}, "private virtual networks (vmnet) configurations... only allow communication between virtual machines and the host system."
 
 Follow the steps below to create two private virtual networks:
 

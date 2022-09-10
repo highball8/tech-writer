@@ -11,7 +11,7 @@ In this tutorial you will create two virtual machines (VMs): one OPNsense VM to 
 
 ## Download, Validate, and Prepare the OPNsense Installation Media
 
-1. Open a browser and go to [OPNsense's download page](https://opnsense.org/download/).
+1. Open a browser and go to [OPNsense's download page](https://opnsense.org/download/){:target="_blank"}.
    ![01-iso-prep-001.png](./images/01-iso-prep/01-iso-prep-001.png)
 2. Use the drop-down menus to select your processor **Architecture**. I am using **amd64** and select the media image type. I am using **dvd**.
    ![01-iso-prep-002.png](./images/01-iso-prep/01-iso-prep-002.png)
@@ -45,11 +45,11 @@ Your OPNsense ISO is ready for installation.
 
 ### Download, Validate, and Prepare the Security Onion Installation Media
 
-1. You can download the [current Security Onion ISO from their GitHub](https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md).
+1. You can download the [current Security Onion ISO from their GitHub](https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md){:target="_blank"}.
    ![01-iso-prep-008.png](./images/01-iso-prep/01-iso-prep-008.png)
 
 2. Place the ISO file in the same location that you put your OPNsense files.
-3. Confirm the checksum against [Security Onion's GitHub](https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md):\
+3. Confirm the checksum against [Security Onion's GitHub](https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md){:target="_blank"}:\
 `$ shasum -a 256 securityonion-2.3.120-20220425.iso` using the hashing algorithm of your choice. (This example uses SHA-256.)
    ![01-iso-prep-009.png](./images/01-iso-prep/01-iso-prep-009.png)
 
