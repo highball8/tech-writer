@@ -41,11 +41,11 @@ sass:
 
 # Permalinks
 permalink: pretty
-permalink: /:categories/:year/:month/:day/:title:output_ext
+# permalink: /:categories/:year/:month/:day/:title:output_ext
 
 # Collections
 collections:
-  security-onion:
+  security-onion-series:
     output: true
     permalink: /:collection/:name:output_ext
 
