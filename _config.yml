@@ -47,7 +47,7 @@ permalink: /:categories/:year/:month/:day/:title:output_ext
 collections:
   security-onion:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name:output_ext
 
 # Exclude from processing.
 # The following items will not be processed, by default.
