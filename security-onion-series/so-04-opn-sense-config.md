@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Configure the OPNsense Virtual Machine
+permalink: /security-onion-series/security-onion-configure-opn-sense
 nav_order: 14
 parent: "Security Onion Virtual Lab Tutorial: Introduction"
 ---

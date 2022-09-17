@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Prepare OPNsense and Security Onion Installation Media
+permalink: /security-onion-series/security-onion-prepare-media
 nav_order: 11
 parent: "Security Onion Virtual Lab Tutorial: Introduction"
 ---

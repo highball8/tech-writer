@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Configure the Security Onion Virtual Machine
+permalink: /security-onion-series/security-onion-configure-security-onion
 nav_order: 16
 parent: "Security Onion Virtual Lab Tutorial: Introduction"
 ---

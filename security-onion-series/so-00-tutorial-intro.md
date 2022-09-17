@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 'Security Onion Virtual Lab Tutorial: Introduction'
+permalink: /security-onion-series/security-onion-intro
 nav_order: 10
 has_children: true
 ---
@@ -28,16 +29,16 @@ The basic components of my virtual lab will be:
 
 The first set of how-to articles on this site will make up a tutorial on everything I needed to do to create my Security Onion-monitored virtual lab. Just that part itself is a considerable amount of work... and it doesn't always work for me. I think the articles provide good lessons on a variety of skills need to administer virtual machines, manage a network, and more. Here's what the first articles will cover:
 
-1. [Prepare Your Installation Media]({% link security-onion/so-01-prepare-media.md %}): Some instructions on downloading and validating OPNsense and Security Onion and preparing them for installation in VMware Fusion Pro.
+1. [Prepare Your Installation Media]({% link security-onion-series/so-01-prepare-media.md %}): Some instructions on downloading and validating OPNsense and Security Onion and preparing them for installation in VMware Fusion Pro.
 
    * **Note:** Installation instructions for other VMs, like Kali or Metasploitable, are out of scope for this tutorial, but I hope to come back and cover them later.
 
-2. [Create VMware Private Virtual Networks for Your Lab]({% link security-onion/so-02-vmw-network-setup.md %}): Create a private virtual network within VMware Fusion Pro.
-3. [Create the OPNsense Virtual Machine]({% link security-onion/so-03-opn-sense-vm-creation.md %}): Create a virtual machine where you will install and configure OPNsense.
-4. [Configure the OPNsense Virtual Machine]({% link security-onion/so-04-opn-sense-config.md %}): Set up OPNsense and use it to create the routing capabilities you need for your private virtual network.
-5. [Create the Security Onion Virtual Machine]({% link security-onion/so-05-onion-vm-creation.md %}): Create a virtual machine where you will install and configure Security Onion.
-6. [Configure the Security Onion Virtual Machine]({% link security-onion/so-06-onion-config.md %}): Walk through Security Onion's installation wizard.
-7. [Start Using Security Onion and the Security Onion Console]({% link security-onion/so-07-onion-intro.md %}): Get to know Security Onion and some of its features through its web management interface and by using the command line.
+2. [Create VMware Private Virtual Networks for Your Lab]({% link security-onion-series/so-02-vmw-network-setup.md %}): Create a private virtual network within VMware Fusion Pro.
+3. [Create the OPNsense Virtual Machine]({% link security-onion-series/so-03-opn-sense-vm-creation.md %}): Create a virtual machine where you will install and configure OPNsense.
+4. [Configure the OPNsense Virtual Machine]({% link security-onion-series/so-04-opn-sense-config.md %}): Set up OPNsense and use it to create the routing capabilities you need for your private virtual network.
+5. [Create the Security Onion Virtual Machine]({% link security-onion-series/so-05-onion-vm-creation.md %}): Create a virtual machine where you will install and configure Security Onion.
+6. [Configure the Security Onion Virtual Machine]({% link security-onion-series/so-06-onion-config.md %}): Walk through Security Onion's installation wizard.
+7. [Start Using Security Onion and the Security Onion Console]({% link security-onion-series/so-07-onion-intro.md %}): Get to know Security Onion and some of its features through its web management interface and by using the command line.
 
 ## Prerequisites
 
