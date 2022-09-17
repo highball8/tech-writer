@@ -41,13 +41,13 @@ sass:
 
 # Permalinks
 permalink: pretty
-# permalink: /:categories/:year/:month/:day/:title:output_ext
+permalink: /:categories/:year/:month/:day/:title:output_ext
 
 # Collections
-# collections:
-#   security-onion:
-#     output: true
-#     permalink: /:collection/:name
+collections:
+  security-onion:
+    output: true
+    permalink: /:collection/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default.
