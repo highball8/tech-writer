@@ -1,7 +1,8 @@
 ---
 layout: page
 title: 'Security Onion Virtual Lab Tutorial: Introduction'
-permalink: /security-onion-series/security-onion-intro
+# permalink: /security-onion-series/security-onion-intro
+slug: security-onion-intro
 nav_order: 10
 has_children: true
 ---

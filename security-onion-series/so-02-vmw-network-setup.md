@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Create a VMware Private Virtual Network for Your Lab
-permalink: /security-onion-series/security-onion-create-networks
+# permalink: /security-onion-series/security-onion-create-networks
+slug: security-onion-create-networks
 nav_order: 12
 parent: "Security Onion Virtual Lab Tutorial: Introduction"
 ---

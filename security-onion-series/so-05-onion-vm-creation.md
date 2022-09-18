@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Create the Security Onion Virtual Machine
-permalink: /security-onion-series/security-onion-create-security-onion
+# permalink: /security-onion-series/security-onion-create-security-onion
 nav_order: 15
 parent: "Security Onion Virtual Lab Tutorial: Introduction"
 ---

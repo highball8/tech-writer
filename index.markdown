@@ -13,4 +13,4 @@ permalink: /
 
 Technical writing samples with a focus on content related to information security, virtualization, networking, and more.
 
-The first set of articles is about setting up a virtual lab for information security research that is monitored by the Security Onion network intrusion detection system (NIDS) and network security monitor (NSM): [Security Onion Virtual Lab Tutorial: Introduction]({{site.url}}{{site.baseurl}}/security-onion-series/security-onion-intro).
+The first set of articles is about setting up a virtual lab for information security research that is monitored by the Security Onion network intrusion detection system (NIDS) and network security monitor (NSM): [Security Onion Virtual Lab Tutorial: Introduction]({% link security-onion-series/so-00-tutorial-intro.md %}).

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Start Using Security Onion and the Security Onion Console
-permalink: /security-onion-series/start-using-security-onion
+# permalink: /security-onion-series/start-using-security-onion
 nav_order: 17
 parent: "Security Onion Virtual Lab Tutorial: Introduction"
 ---

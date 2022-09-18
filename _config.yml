@@ -40,14 +40,14 @@ sass:
   style: compressed
 
 # Permalinks
-# permalink: none
-permalink: /:title:/
+# permalink: pretty
+# permalink: /:title:/
 
 # Collections
 collections:
   security-onion-series:
     output: true
-    permalink: /:collection/:title:/
+    # permalink: /:collection/:slug
 
 # Exclude from processing.
 # The following items will not be processed, by default.
