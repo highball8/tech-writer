@@ -7,13 +7,15 @@ nav_order: 12
 parent: "Security Onion Virtual Lab Tutorial: Introduction"
 ---
 
-# Create VMware Private Virtual Networks` for Your Lab
+# Create VMware Private Virtual Networks for Your Lab
 
 These steps detail how you can use VMware Fusion Pro's networking capabilities to create two private virtual networks. You will connect your different virtual machines (VMs) to these networks so that the VMs can interact with one another, and reach out to the public internet to download updates, browse the internet, etc.
 
 **Note:** Per [VMware's documentation](https://docs.vmware.com/en/VMware-Fusion/12/com.vmware.fusion.using.doc/GUID-DEB1FB99-0E44-4AAA-9693-6C2687098F13.html){:target="_blank"}, "private virtual networks (vmnet) configurations... only allow communication between virtual machines and the host system."
 
-Follow the steps below to create two private virtual networks:
+## Private Virtual Network Overview and Topology
+
+In this scenario you use the VMware's networking feature to create two private virtual networks:
 
 * **EXTERNAL_NET_LAN**: This will be a private virtual network that you will connect a Kali VM to, and then use the browser of the Kali VM to access the management web user interface of the OPNsense router. It is *also* the network that will simulate a public wide area network (WAN) from which the Kali VM will reconnoiter and attack the network monitored by the Security Onion deployment. In this article, you assign this network the IP address range of 10.10.9.0/24.
 * **HOME_NET_LAN:** This private virtual network acts as the local-area network that Security Onion will monitor. This network is assigned the IP address range of 10.10.10.0/24. You will use that same address range when configuring Security Onion. We will connect virtual machines like Metasploitable to this network, where they can act as targets monitored by Security Onion.
@@ -24,7 +26,7 @@ A note on the network names: I got the names **EXTERNAL_NET** and **HOME_NET** f
 
 * OPNsense router:
 
-  * **Network Adapter:** Connect to the host MacBook Pro using **Bridged Networking** > **Autodetect** so that your OPNsense VM can connect to the internet through the host operating system's internet connection.
+  * **Network Adapter:** Connects to the host MacBook Pro using **Bridged Networking** > **Autodetect** to provide a WAN interface so that your OPNsense VM can connect to the internet through the host operating system's internet connection.
   * **Network Adapter 2:** This will connect to the **EXTERNAL_NET_LAN** (10.10.9.0/24) subnet.
   * **Network Adapter 3:** This will connect to the **HOME_NET_LAN** (10.10.10.0/24) subnet.
 
@@ -40,6 +42,11 @@ A note on the network names: I got the names **EXTERNAL_NET** and **HOME_NET** f
 * Metasploitable virtual machines and other "targets:"
 
   * **Network Adapter:** Any virtual machines that we want to practice attacks against will be connected to **HOME_NET_LAN**.
+
+This diagram depicts the network components and topology that I am using in this scenario:
+![network-diagram-1.png](./images/02-vmw-network-setup/network-diagram-1.png)
+
+## Create the Private Virtual Networks
 
 1. Open VMware Fusion, and then open its **Preferences**.
    ![02-vmw-network-setup-001.png](./images/02-vmw-network-setup/02-vmw-network-setup-001.png)
