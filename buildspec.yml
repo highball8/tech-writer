@@ -1,0 +1,21 @@
+version: 0.2
+
+# env:
+#   parameter-store:
+#     DIST_ID : "/cloudfront/offcoding/distid"
+
+phases:
+  install:
+    commands:
+      - gem install bundler
+      - pip install --user awscli
+      - rm -rf _site
+      - bundle install
+
+  build:
+    commands:
+      - echo "******** Building Jekyll site ********"
+      - bundle exec jekyll build
+      - echo "******** Uploading to S3 ********"
+      - aws s3 sync _site/ s3://tech-writer.massolit-media.com --acl public-read --delete
+      - aws cloudfront create-invalidation --distribution-id EODEMCA6K6NC4 --paths '/*' 
