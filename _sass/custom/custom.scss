@@ -233,6 +233,12 @@ a {
   color: #28a0cb;
 }
 
+//  May 23, 2026: Wrapping Code Blocks
+pre, code {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
 // body {
 //   font-family: $body-font-family;
 //   font-size: inherit;
