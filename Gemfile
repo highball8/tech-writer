@@ -14,6 +14,9 @@ gem "jekyll", "~> 4.4.1"
 # Just the Docs Theme
 gem "just-the-docs"
 
+# Jekyll SASS converter (Added 5/23/2026)
+gem "jekyll-sass-converter"
+
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
@@ -23,7 +26,6 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
-  gem "jekyll-sass-converter"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
