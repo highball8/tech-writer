@@ -167,6 +167,7 @@ PLATFORMS
   x86-linux-gnu
   x86-linux-musl
   x86_64-darwin
+  x86_64-linux
   x86_64-linux-android
   x86_64-linux-gnu
   x86_64-linux-musl
@@ -175,9 +176,10 @@ DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.4.1)
   jekyll-compose
-  jekyll-feed (~> 0.12)
-  jekyll-seo-tag (~> 2.8)
-  jekyll-sitemap (~> 1.4)
+  jekyll-feed
+  jekyll-sass-converter
+  jekyll-seo-tag
+  jekyll-sitemap
   just-the-docs
   tzinfo (~> 1.2)
   tzinfo-data

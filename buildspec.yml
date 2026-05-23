@@ -10,7 +10,7 @@ phases:
       - gem install bundler
       - pip install --user awscli
       - rm -rf _site
-      - bundle install
+      - bundle install --deployment
 
   build:
     commands:
