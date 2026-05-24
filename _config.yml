@@ -47,7 +47,10 @@ sass:
 collections:
   security-onion-series:
     output: true
-    # permalink: /:collection/:slug
+    permalink: /tutorials/security-onion-series/:name/
+  learning-jekyll:
+    output: true
+    permalink: /tutorials/learning-jekyll/:name/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

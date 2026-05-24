@@ -49,3 +49,5 @@ This tutorial requires you to have some familiarity with and knowledge of deskto
 * [VMware Fusion Pro](https://store-us.vmware.com/fusionpro_buy_new). I've played around with [VirtualBox](https://www.virtualbox.org/){:target="_blank"}, which is free, and [Parallels](https://www.parallels.com/){:target="_blank"}, which I have paid for. I've had lots of problems with both. That could be my fault. But the $199 I paid for VMware Fusion Pro was definitely worth it. VMs I create in Fusion Pro work so much faster and more reliably for me.
 * I use [ITerm2](https://iterm2.com/){:target="_blank"} with Zsh for the terminal on my MacBook Pro host machine.
 * You will also need a web browser, both on the host operating system and in at least one of the VMs connected to the lab.
+
+**Note:** I use angle brackets (that is `<` and `>`) to enclose placeholder text for filenames, paths, URLs, software versions, or anything where the value may be different for you than it is for me.

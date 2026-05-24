@@ -44,35 +44,35 @@ A note on the network names: I got the names **EXTERNAL_NET** and **HOME_NET** f
   * **Network Adapter:** Any virtual machines that we want to practice attacks against will be connected to **HOME_NET_LAN**.
 
 This diagram depicts the network components and topology that I am using in this scenario:
-![This is a network diagram describing the network described in this section.](./images/02-vmw-network-setup/network-diagram-1.png)
+![This is a network diagram depicting the network described in this section.](./security-onion-images/02-vmw-network-setup/network-diagram-1.png)
 
 ## Create the Private Virtual Networks
 
 1. Open VMware Fusion, and then open its **Preferences**.
-   ![](./images/02-vmw-network-setup/02-vmw-network-setup-001.png)
+   ![](./security-onion-images/02-vmw-network-setup/02-vmw-network-setup-001.png)
 2. Within **Preferences**, click **Network**.
-   ![](./images/02-vmw-network-setup/02-vmw-network-setup-002.png)
+   ![](./security-onion-images/02-vmw-network-setup/02-vmw-network-setup-002.png)
 3. Click the padlock icon in the bottom-left corner of the **Network** window.
-   ![](./images/02-vmw-network-setup/02-vmw-network-setup-003.png)
+   ![](./security-onion-images/02-vmw-network-setup/02-vmw-network-setup-003.png)
 4. Enter the host machine's administrator password and click **OK**.
-   ![](./images/02-vmw-network-setup/02-vmw-network-setup-004.png)
+   ![](./security-onion-images/02-vmw-network-setup/02-vmw-network-setup-004.png)
 5. Click the plus icon (**+**) to create a private virtual network for your lab environment.
-   ![](./images/02-vmw-network-setup/02-vmw-network-setup-005.png)
+   ![](./security-onion-images/02-vmw-network-setup/02-vmw-network-setup-005.png)
 6. A network appears under **Custom** > **Private to my Mac**. The name will start with **vmnet**. Click the network name once so that the name becomes editable.
-   ![](./images/02-vmw-network-setup/02-vmw-network-setup-006.png)
+   ![](./security-onion-images/02-vmw-network-setup/02-vmw-network-setup-006.png)
 7. Name this network **HOME_NET_LAN**. Press `Enter` to set the name.
-   ![](./images/02-vmw-network-setup/02-vmw-network-setup-007.png)
+   ![](./security-onion-images/02-vmw-network-setup/02-vmw-network-setup-007.png)
 8. Enter a **Subnet IP**. I am using **10.10.10.0**. Leave the **Subnet Mask** as **255.255.255.0** and click **Apply**.
-   ![](./images/02-vmw-network-setup/02-vmw-network-setup-008.png)
+   ![](./security-onion-images/02-vmw-network-setup/02-vmw-network-setup-008.png)
 9. Clear the checkboxes for **Connect the host Mac to this network** (because I am trying to create an isolated network for the lab) and **Provide addresses on this network via DHCP** (because the OPNsense router will provide the DHCP service), then click **Apply**.
-   ![](./images/02-vmw-network-setup/02-vmw-network-setup-009.png)
+   ![](./security-onion-images/02-vmw-network-setup/02-vmw-network-setup-009.png)
 10. Click the plus icon (**+**) again to create a second private virtual network.
-   ![](./images/02-vmw-network-setup/02-vmw-network-setup-010.png)
+   ![](./security-onion-images/02-vmw-network-setup/02-vmw-network-setup-010.png)
 11. A new network that starts with start with **vmnet** appears under **Custom** > **Private to my Mac**. Click the network name once so that the name becomes editable.
-   ![](./images/02-vmw-network-setup/02-vmw-network-setup-011.png)
+   ![](./security-onion-images/02-vmw-network-setup/02-vmw-network-setup-011.png)
 12. Enter **EXTERNAL_NET_LAN** as the name for this network and press `Enter`.
-   ![](./images/02-vmw-network-setup/02-vmw-network-setup-012.png)
+   ![](./security-onion-images/02-vmw-network-setup/02-vmw-network-setup-012.png)
 13. Enter a **Subnet IP** value of **10.10.9.0**. Leave the **Subnet Mask** as **255.255.255.0**. Click **Apply**.
-   ![](./images/02-vmw-network-setup/02-vmw-network-setup-013.png)
+   ![](./security-onion-images/02-vmw-network-setup/02-vmw-network-setup-013.png)
 14. Clear the checkboxes for **Connect the host Mac to this network** and **Provide addresses on this network via DHCP**, then click **Apply** and close the **Preferences** window.
-   ![](./images/02-vmw-network-setup/02-vmw-network-setup-014.png)
+   ![](./security-onion-images/02-vmw-network-setup/02-vmw-network-setup-014.png)
