@@ -52,6 +52,14 @@ collections:
     output: true
     permalink: /tutorials/learning-jekyll/:name/
 
+# Display Collections in Sidebar nav:
+just_the_docs:
+  collections:
+    security-onion-series:
+      name: Security Onion Series
+    learning-jekyll:
+      name: Learning Jekyll
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -72,8 +80,24 @@ collections:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# Google Analytics Tracking (Sept. 4, 2022)
+# Google Analytics Tracking (2022-09-04)
 # I got it from the Just the docs documentation and am leaving the anonymize_ip and comment the way it was there.
-# I tried using the Massolit-Media.com property but eventually set up a separate GA proeprty.
+# I tried using the Massolit-Media.com property but eventually set up a separate GA property.
 ga_tracking: G-QBG3F9C10M # Massolit Media - Google Analytics 4 Measurement ID - added under my own initiative
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
+
+# Styling Callouts (2026-06-05)
+# https://just-the-docs.com/docs/ui-components/callouts/
+callouts:
+  note:
+    title: Note
+    color: yellow
+  warning:
+    title: Warning
+    color: red
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green

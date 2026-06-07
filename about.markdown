@@ -16,11 +16,11 @@ So now I am creating this website. I will use it to create information-security-
 
 * **[Git](https://git-scm.com/) and [GitHub](https://github.com/){:target="_blank"}:** I am creating the Jekyll site locally, tracking changes in Git, and pushing those changes to a repository ("repo") on my GitHub account.
 * **[Amazon Web Services (AWS)](https://aws.amazon.com/){:target="_blank"}:** I use AWS to create the infrastructure the builds, deploys, and hosts the website. I also use it as my Domain Name Service (DNS) registrar.
-  * **[Amazon Web Services (AWS) Simple Storage Solution (S3)](https://aws.amazon.com/s3/){:target="_blank"}:** My Travis script builds all my Jekyll site and uploads it to an S3 bucket.
+  * **[Amazon Web Services (AWS) Simple Storage Solution (S3)](https://aws.amazon.com/s3/){:target="_blank"}:** My Buildspec file script builds all my Jekyll site and uploads it to an S3 bucket.
   * **[AWS CloudFront](https://aws.amazon.com/cloudfront/){:target="_blank"}:** I created a CloudFront distribution that publishes the S3 bucket as a CloudFront distribution, updating it every time I push changes to GitHub, and even providing a TLS/SSL certificate.
   * **[AWS Route 53](https://aws.amazon.com/route53/){:target="_blank"}**: I created this subdomain (**[tech-writer.massolit-media.com](https://tech-writer.massolit-media.com/)**) using Amazon Web Services's Route 53 for DNS management. (Honestly I had a lot of problems. It was my first time setting up a subdomain.)
 
-Like I said, the website you are looking at was created using [Jekyll](https://jekyllrb.com/){:target="_blank"}, a static-site generator built on [Ruby](https://www.ruby-lang.org){:target="_blank"}. I thought "static sites" and though it would be simple. It's very powerful. I'll tell you more when I learn more.
+Like I said, the website you are looking at was created using [Jekyll](https://jekyllrb.com/){:target="_blank"}, a static-site generator built on [Ruby](https://www.ruby-lang.org){:target="_blank"}. I thought "static sites" and thought it would be simple. It's very powerful. I'll tell you more when I learn more.
 
 The theme I am using is called Just the Docs. I'm learning about it by checking out [their GitHub](https://github.com/just-the-docs/just-the-docs){:target="_blank"} and [their own documentation site](https://just-the-docs.github.io/just-the-docs/){:target="_blank"}. I've also been checking out [OpenSearch's implementation of Just the Docs on GitHub](https://github.com/opensearch-project/documentation-website){:target="_blank"} for some additional guidance.
 

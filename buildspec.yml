@@ -7,7 +7,6 @@ phases:
     commands:
       - ruby -v
       - gem install bundler -v 4.0.12
-      - pip install --user awscli
       - rm -rf _site
       - bundle install
 
