@@ -224,9 +224,9 @@ body {
   color: #1b1b1b; // $body-text-color: $grey-dk-100 !default;
 }
 
-code {
+code, code.language-plaintext.highlighter-rouge {
   font-family: 'Roboto Mono';
-  background-color: #a9aeb1;
+  background-color: #f0f0f0;
 }
 
 a {
