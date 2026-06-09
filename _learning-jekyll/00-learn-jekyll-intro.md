@@ -20,16 +20,6 @@ This tutorial is not exhaustive. I'm going to show you how to install Jekyll, st
 {: .note }
 I use angle brackets (`<` and `>`) to enclose placeholder text for filenames, paths, URLs, software versions, or anything where the value may be different for you than it is for me.
 
-{: .new }
-I use angle brackets (`<` and `>`) to enclose placeholder text for filenames, paths, URLs, software versions, or anything where the value may be different for you than it is for me.
-
-{: .important }
-I use angle brackets (`<` and `>`) to enclose placeholder text for filenames, paths, URLs, software versions, or anything where the value may be different for you than it is for me.
-
-{: .warning }
-I use angle brackets (`<` and `>`) to enclose placeholder text for filenames, paths, URLs, software versions, or anything where the value may be different for you than it is for me.
-
-
 ## Prerequisites
 
 This tutorial assumes an intermediate level of knowledge, skill, and familiarity. It requires you to have some familiarity with and knowledge of how the web and websites work, a solid foundation using a Unix or Linux command line, and understanding how to use various services from Amazon Web Services.

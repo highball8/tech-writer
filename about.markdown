@@ -22,5 +22,5 @@ So now I am creating this website. I will use it to create information-security-
 
 Like I said, the website you are looking at was created using [Jekyll](https://jekyllrb.com/){:target="_blank"}, a static-site generator built on [Ruby](https://www.ruby-lang.org){:target="_blank"}. I thought "static sites" and thought it would be simple. It's very powerful. I'll tell you more when I learn more.
 
-The theme I am using is called Just the Docs. I'm learning about it by checking out [their GitHub](https://github.com/just-the-docs/just-the-docs){:target="_blank"} and [their own documentation site](https://just-the-docs.github.io/just-the-docs/){:target="_blank"}. I've also been checking out [OpenSearch's implementation of Just the Docs on GitHub](https://github.com/opensearch-project/documentation-website){:target="_blank"} for some additional guidance.
+The theme I am using is called Just the Docs. I'm learning about it by checking out [their GitHub](https://github.com/just-the-docs/just-the-docs){:target="_blank"} and [their own documentation site](https://just-the-docs.com/){:target="_blank"}. I've also been checking out [OpenSearch's implementation of Just the Docs on GitHub](https://github.com/opensearch-project/documentation-website){:target="_blank"} for some additional guidance.
 

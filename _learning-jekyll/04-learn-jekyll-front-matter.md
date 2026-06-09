@@ -15,7 +15,7 @@ ADD FRONT MATTER LATER
 ---
 ```
 
-Without front matter, the Jekyll will not recognize the file as a Jekyll page or post to build so it won't function as part of your site. Anything without front matter won't be structured or styled like the rest of your site, it won't be included in categories or menus, and just will not function as part of the website.
+Without front matter, Jekyll will not recognize the file as a Jekyll page or post to build so it won't function as part of your site. Anything without front matter won't be structured or styled like the rest of your site, it won't be included in categories or menus, and just will not function as part of the website.
 
 If you have been following along, you created a Contact Me page in [Build Content for Your First Jekyll Site]({% link _learning-jekyll/03-learn-jekyll-build-content.md %}). But that page is not going to display in any site menus or any site navigation at all until you add Jekyll front matter.
 

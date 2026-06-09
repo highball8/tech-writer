@@ -241,7 +241,8 @@ pre, code {
 
 // Customizing Just the Docs Callouts
 
-p.note-title, p.note::before {
+.main-content p.note::before,
+.main-content blockquote.note::before {
   color: #000;
   font-size: 1rem;
 }
@@ -250,6 +251,15 @@ p.note {
   border: 1px #ffbe2e solid;
   border-left: 4px solid #ffbe2e;
   background-color: #fee685;
+}
+
+.main-content blockquote.note {
+  background-color: #fee685;
+  border-left: 4px solid #ffbe2e;
+  padding: 1rem;
+  border-radius: 4px;
+  font-style: normal;
+  color: inherit;
 }
 
 p.warning-title, p.warning::before {

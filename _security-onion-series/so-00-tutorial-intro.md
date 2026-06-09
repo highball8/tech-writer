@@ -8,7 +8,7 @@ has_children: true
 # Security Onion Virtual Lab Tutorial: Introduction
 
 {: .important }
->I created this tutorial in mid-2022. I am adding this note in June 2026, so much of the content is four years old and has accuracy and currency issues, particularly when it describes in the versions of software like Security Onion and OPNsense that are used to create the environment.
+>I created this tutorial in mid-2022. I am adding this note in June 2026, so much of the content is four years old and has accuracy and currency issues, particularly when it describes in the versions of software like Security Onion and OPNsense that are used to create the environment. For example, the version of Security Onion used is 2.3; Security Onion is now on version 3, and 2.3 is considered end-of-life.
 >
 > Perhaps more importantly, I created this on an older Apple computer with an Intel processor with x86-64 architecture. The x86-64 is much more conducive to creating this type of environment, and a system like Security Onion is designed to run on x86-64. I am not even sure if I would be able to repeat these steps on my current MacBook Pro, which now come with Apple Silicon with an ARM64/aarch64 architecture. So it would be a lot of work to even get some of these virtual machines to run on that type of computer, and the performance and behavior could vary.
 >

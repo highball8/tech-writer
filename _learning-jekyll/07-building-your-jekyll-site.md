@@ -163,9 +163,8 @@ If you want to diagram the contents of `_site`, navigate to the directory and us
 15 directories, 35 files
 ```
 
-**Note:**
-
-* The `_site` folder is generated every time you run `bundle exec jekyll serve`, but the `bundle exec jekyll build` command is what you should run if you want to manually generate your static site.
-* However, if you are troubleshooting an issue, or want a fresh start, purge the `_site` directory with the `bundle exec jekyll clean` command.
+{: .note}
+> * The `_site` folder is generated every time you run `bundle exec jekyll serve`, but the `bundle exec jekyll build` command is what you should run if you want to manually generate your static site.
+> * However, if you are troubleshooting an issue, or want a fresh start, purge the `_site` directory with the `bundle exec jekyll clean` command.
 
 Next we are going to go beyond a website that you generate manually with the `build` command and embrace the "Docs as Code" approach and CI/CD concepts by automating the build and deployment of your website using GitHub and Amazon Web Services infrastructure and tools.
