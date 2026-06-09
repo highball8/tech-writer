@@ -18,7 +18,17 @@ In this tutorial, I'm going to provide some instructions on how to get started u
 This tutorial is not exhaustive. I'm going to show you how to install Jekyll, start using its commands, create some text and screenshot content in your code editor using Markdown, and then preview and build that site locally. From there I'll show you how I set up the CI/CD pipeline that allows me to push code from my laptop to the AWS cloud where it is served globally by their content distribution network.
 
 {: .note }
-**Note:** I use angle brackets (`<` and `>`) to enclose placeholder text for filenames, paths, URLs, software versions, or anything where the value may be different for you than it is for me.
+I use angle brackets (`<` and `>`) to enclose placeholder text for filenames, paths, URLs, software versions, or anything where the value may be different for you than it is for me.
+
+{: .new }
+I use angle brackets (`<` and `>`) to enclose placeholder text for filenames, paths, URLs, software versions, or anything where the value may be different for you than it is for me.
+
+{: .important }
+I use angle brackets (`<` and `>`) to enclose placeholder text for filenames, paths, URLs, software versions, or anything where the value may be different for you than it is for me.
+
+{: .warning }
+I use angle brackets (`<` and `>`) to enclose placeholder text for filenames, paths, URLs, software versions, or anything where the value may be different for you than it is for me.
+
 
 ## Prerequisites
 

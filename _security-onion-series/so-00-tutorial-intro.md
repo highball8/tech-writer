@@ -7,6 +7,13 @@ has_children: true
 
 # Security Onion Virtual Lab Tutorial: Introduction
 
+{: .important }
+>I created this tutorial in mid-2022. I am adding this note in June 2026, so much of the content is four years old and has accuracy and currency issues, particularly when it describes in the versions of software like Security Onion and OPNsense that are used to create the environment.
+>
+> Perhaps more importantly, I created this on an older Apple computer with an Intel processor with x86-64 architecture. The x86-64 is much more conducive to creating this type of environment, and a system like Security Onion is designed to run on x86-64. I am not even sure if I would be able to repeat these steps on my current MacBook Pro, which now come with Apple Silicon with an ARM64/aarch64 architecture. So it would be a lot of work to even get some of these virtual machines to run on that type of computer, and the performance and behavior could vary.
+>
+> I am leaving this series up for now as it is still a useful conceptual approach on how you set up the networks, create the virtual machines, and install the software.
+
 This series of how-to articles walks you through how to set up your own virtual lab for information security research using virtual machines (VMs). I am using [VMware Fusion Pro](https://store-us.vmware.com/fusionpro_buy_new){:target="_blank"}, which is a Type 2 hypervisor used for desktop virtualization on host operating systems running macOS.
 
 The centerpiece of the lab is a virtual machine (VM) running [Security Onion](https://securityonionsolutions.com/){:target="_blank"}, which is a leading open-source network intrusion detection system (NIDS) and network security monitor (NSM). Security Onion uses containers to give users a wide variety of tools that allow for network monitoring and alerting, threat hunting, and more. It utilizes well-known, widely used open-source applications, including:
@@ -49,4 +56,4 @@ This tutorial requires you to have some familiarity with and knowledge of deskto
 * You will also need a web browser, both on the host operating system and in at least one of the VMs connected to the lab.
 
 {: .note }
-**Note:** I use angle brackets (`<` and `>`) to enclose placeholder text for filenames, paths, URLs, software versions, or anything where the value may be different for you than it is for me.
+I use angle brackets (`<` and `>`) to enclose placeholder text for filenames, paths, URLs, software versions, or anything where the value may be different for you than it is for me.

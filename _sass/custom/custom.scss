@@ -239,18 +239,70 @@ pre, code {
     word-break: break-word;
 }
 
-// body {
-//   font-family: $body-font-family;
-//   font-size: inherit;
-//   line-height: $body-line-height;
-//   color: $body-text-color;
-//   background-color: $body-background-color;
-// }
+// Customizing Just the Docs Callouts
 
-// code {
-//   font-family: $mono-font-family;
-//   font-size: 0.75em;
-//   line-height: $body-line-height;
-// }
+p.note-title, p.note::before {
+  color: #000;
+  font-size: 1rem;
+}
+
+p.note {
+  border: 1px #ffbe2e solid;
+  border-left: 4px solid #ffbe2e;
+  background-color: #fee685;
+}
+
+p.warning-title, p.warning::before {
+  color: #000;
+  font-size: 1rem;
+}
+
+p.warning {
+  border: 1px #e41d3d solid;
+  border-left: 4px solid #b50909;
+  background-color: #e41d3d;
+}
+
+.main-content p.important::before,
+.main-content blockquote.important::before {
+  color: #000;
+  font-size: 1rem;
+}
+
+p.important, blockquote.important {
+  border: 1px #0076d6 solid;
+  border-left: 4px solid #0050d8;
+  background-color: #0076d6;
+}
+
+.main-content blockquote.important {
+  background-color: #0076d6;
+  border-left: 4px solid #0050d8;
+  padding: 1rem;
+  border-radius: 4px;
+  font-style: normal;
+  color: inherit;
+}
+
+.main-content blockquote.important p {
+  margin: 0 0 0.5rem 0;
+}
+
+.main-content blockquote.important p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+p.new-title, p.new::before {
+  color: #000;
+  font-size: 1rem;
+}
+
+p.new {
+  border: 1px #04c585 solid;
+  border-left: 4px solid #538200;
+  background-color: #04c585;
+}
 
 // https://designsystem.digital.gov/utilities/color/

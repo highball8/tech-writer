@@ -16,4 +16,4 @@ phases:
       - bundle exec jekyll build
       - echo "******** Uploading to S3 ********"
       - aws s3 sync _site/ s3://tech-writer.massolit-media.com --delete
-      - aws cloudfront create-invalidation --distribution-id EODEMCA6K6NC4 --paths '/*'
+      - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths '/*'

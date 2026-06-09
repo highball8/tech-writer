@@ -89,6 +89,9 @@ ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (t
 # Styling Callouts (2026-06-05)
 # https://just-the-docs.com/docs/ui-components/callouts/
 callouts:
+  highlight:
+    title: highlight
+    color: yellow
   note:
     title: Note
     color: yellow
