@@ -320,7 +320,7 @@ phases:
       - bundle exec jekyll build # Build the site
       - echo "******** Uploading to S3 ********" # Display text for the user
       - aws s3 sync _site/ s3://jekyll.massolit-media.com --delete # Delete the _site contents on the S3 buckets
-      - aws cloudfront create-invalidation --distribution-id <distribution-id> --paths '/*' # Invalidate the previously published CloudFront distribution so the new Jekyll build replaces it
+      - aws cloudfront create-invalidation --distribution-id <distribution-id> --paths '/*' # Invalidate the previously published CloudFront distribution so the new Jekyll build replaces it; use the Distribution ID that you created in Create an AWS CloudFront Distribution for Your Static Website
 ```
 
 Save `buildspec.yml`, add it to your repo, commit it, and push it to your GitHub repo.
