@@ -45,20 +45,27 @@ sass:
 
 # Collections
 collections:
-  security-onion-series:
-    output: true
-    permalink: /tutorials/security-onion-series/:name/
   learning-jekyll:
     output: true
     permalink: /tutorials/learning-jekyll/:name/
+  # security-onion-series-win11-2026:
+  #   output: true
+  #   permalink: /tutorials/_security-onion-series-win11-2026/:name/
+  security-onion-series-macos-2022:
+    output: true
+    permalink: /tutorials/_security-onion-series-macos-2022/:name/
+
 
 # Display Collections in Sidebar nav:
 just_the_docs:
   collections:
-    security-onion-series:
-      name: Security Onion Series
     learning-jekyll:
       name: Learning Jekyll
+    # security-onion-series-win11-2026:
+    #   name: Security Onion Series (Windows 11, 2026)
+    security-onion-series-macos-2022:
+      name: Security Onion Series (MacOS, 2022)
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

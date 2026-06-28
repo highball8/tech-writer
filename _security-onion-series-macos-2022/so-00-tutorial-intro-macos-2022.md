@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 'Security Onion Virtual Lab Tutorial: Introduction'
+title: 'Security Onion Virtual Lab Tutorial: Introduction (MacOS, 2022)'
 nav_order: 10
 has_children: true
 ---
 
-# Security Onion Virtual Lab Tutorial: Introduction
+# Security Onion Virtual Lab Tutorial: Introduction (MacOS, 2022)
 
 {: .important }
 >I created this tutorial in mid-2022. I am adding this note in June 2026, so much of the content is four years old and has accuracy and currency issues, particularly when it describes in the versions of software like Security Onion and OPNsense that are used to create the environment. For example, the version of Security Onion used is 2.3; Security Onion is now on version 3, and 2.3 is considered end-of-life.
@@ -35,23 +35,23 @@ The basic components of my virtual lab will be:
 
 The first set of how-to articles on this site will make up a tutorial on everything I needed to do to create my Security Onion-monitored virtual lab. Just that part itself is a considerable amount of work... and it doesn't always work for me. I think the articles provide good lessons on a variety of skills needed to administer virtual machines, manage a network, and more. Here's what the first articles will cover:
 
-1. [Prepare Your Installation Media]({% link _security-onion-series/so-01-prepare-media.md %}): Some instructions on downloading and validating OPNsense and Security Onion and preparing them for installation in VMware Fusion Pro.
+1. [Prepare Your Installation Media]({% link _security-onion-series-macos-2022/so-01-prepare-media-macos-2022.md %}): Some instructions on downloading and validating OPNsense and Security Onion and preparing them for installation in VMware Fusion Pro.
 
    * **Note:** Installation instructions for other VMs, like Kali or Metasploitable, are out of scope for this tutorial, but I hope to come back and cover them later.
 
-2. [Create VMware Private Virtual Networks for Your Lab]({% link _security-onion-series/so-02-vmw-network-setup.md %}): Create a private virtual network within VMware Fusion Pro.
-3. [Create the OPNsense Virtual Machine]({% link _security-onion-series/so-03-opn-sense-vm-creation.md %}): Create a virtual machine where you will install and configure OPNsense.
-4. [Configure the OPNsense Virtual Machine]({% link _security-onion-series/so-04-opn-sense-config.md %}): Set up OPNsense and use it to create the routing capabilities you need for your private virtual network.
-5. [Create the Security Onion Virtual Machine]({% link _security-onion-series/so-05-onion-vm-creation.md %}): Create a virtual machine where you will install and configure Security Onion.
-6. [Configure the Security Onion Virtual Machine]({% link _security-onion-series/so-06-onion-config.md %}): Walk through Security Onion's installation wizard.
-7. [Start Using Security Onion and the Security Onion Console]({% link _security-onion-series/so-07-onion-intro.md %}): Get to know Security Onion and some of its features through its web management interface and by using the command line.
+2. [Create VMware Private Virtual Networks for Your Lab]({% link _security-onion-series-macos-2022/so-02-vmw-network-setup-macos-2022.md %}): Create a private virtual network within VMware Fusion Pro.
+3. [Create the OPNsense Virtual Machine]({% link _security-onion-series-macos-2022/so-03-opn-sense-vm-creation-macos-2022.md %}): Create a virtual machine where you will install and configure OPNsense.
+4. [Configure the OPNsense Virtual Machine]({% link _security-onion-series-macos-2022/so-04-opn-sense-config-macos-2022.md %}): Set up OPNsense and use it to create the routing capabilities you need for your private virtual network.
+5. [Create the Security Onion Virtual Machine]({% link _security-onion-series-macos-2022/so-05-onion-vm-creation-macos-2022.md %}): Create a virtual machine where you will install and configure Security Onion.
+6. [Configure the Security Onion Virtual Machine]({% link _security-onion-series-macos-2022/so-06-onion-config-macos-2022.md %}): Walk through Security Onion's installation wizard.
+7. [Start Using Security Onion and the Security Onion Console]({% link _security-onion-series-macos-2022/so-07-onion-intro-macos-2022.md %}): Get to know Security Onion and some of its features through its web management interface and by using the command line.
 
 ## Prerequisites
 
 This tutorial requires you to have some familiarity with and knowledge of desktop virtualization and the Linux command line. I created the virtual lab for this tutorial using:
 
 * A 2016 MacBook Pro running macOS 12.4. This is a very powerful laptop, but it's probably not enough to do this right. Security Onion has a *minimum* RAM requirement of 12GB; my whole laptop only has 16GB, so a virtual lab running Security Onion and the other VMs (OPNsense, Kali, Metasploitable) will be slow if your host machine running the VMs does not have the processor power and RAM.
-* [VMware Fusion Pro](https://store-us.vmware.com/fusionpro_buy_new). I've played around with [VirtualBox](https://www.virtualbox.org/){:target="_blank"}, which is free, and [Parallels](https://www.parallels.com/){:target="_blank"}, which I have paid for. I've had lots of problems with both. That could be my fault. But the $199 I paid for VMware Fusion Pro was definitely worth it. VMs I create in Fusion Pro work so much faster and more reliably for me.
+* [VMware Fusion Pro](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion){:target="_blank"}. I've played around with [VirtualBox](https://www.virtualbox.org/){:target="_blank"}, which is free, and [Parallels](https://www.parallels.com/){:target="_blank"}, which I have paid for. I've had lots of problems with both. That could be my fault. But the $199 I paid for VMware Fusion Pro was definitely worth it. VMs I create in Fusion Pro work so much faster and more reliably for me.
 * I use [ITerm2](https://iterm2.com/){:target="_blank"} with Zsh for the terminal on my MacBook Pro host machine.
 * You will also need a web browser, both on the host operating system and in at least one of the VMs connected to the lab.
 

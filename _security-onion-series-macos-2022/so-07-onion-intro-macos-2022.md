@@ -2,7 +2,7 @@
 layout: page
 title: Using Security Onion and the Security Onion Console
 nav_order: 17
-parent: "Security Onion Virtual Lab Tutorial: Introduction"
+parent: "Security Onion Virtual Lab Tutorial: Introduction (MacOS, 2022)"
 ---
 
 # Using Security Onion and the Security Onion Console
@@ -31,21 +31,21 @@ If you use SSH keys for authentication, you can add your SSH key pair to the Sec
 ## Start Using Security Onion and the Security Onion Console
 
 1. When Security Onion reboots after installation, you will see the login prompt with the hostname you gave to the system. Enter the CentOS system credentials that you set for the VM during initial installation.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-001.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-001.png)
 2. When you successfully log in, a banner displays the URL to use for accessing the Security Onion Console on the management network. The first thing you want to do is run the `sudo so-status` command to determine the status of Security Onion.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-002.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-002.png)
 3. The output of `sudo so-status` is a color-coded breakdown of all the Docker containers that make up Security Onion. I run this command until I see all containers are green and `OK`, which can take several minutes depending on processor and memory resources available to the Security Onion VM.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-003.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-003.png)
 4. Open your browser of choice and enter the URL from the login banner and enter it into the browser. Check the address bar to make sure that the URL starts with `https://`.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-004.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-004.png)
 5. Your browser will display a self-signed certificate warning (**NET::ERR_CERT_AUTHORITY_INVALID**). Click **Advanced**.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-005.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-005.png)
 6. Click **Proceed to \<Security-Onion-URL\>**.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-006.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-006.png)
 7. Enter the email address and password that you entered during Security Installation configuration on the **Login to Security Onion** page and click **Login**.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-007.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-007.png)
 8. The Security Onion **Overview** page loads with some introductory text about Security Onion and how to customize this page. In the left sidebar are links to:
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-008.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-008.png)
 
    * The **Overview** page.
    * The **Alerts** page where you can review detections on your network.
@@ -66,24 +66,24 @@ If you use SSH keys for authentication, you can add your SSH key pair to the Sec
       * **Navigator** lets you walk through the steps of an attack using the MITRE ATT&CK Framework.
 
 9. Click **Alerts**.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-009.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-009.png)
 10. The **Alerts** page loads with a table of events that it has detected. Since this is a fresh install on a network with no traffic, all of these alerts are related to the Security Onion VM itself and are rated as having a low severity. 
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-010.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-010.png)
 11. Each individual alert type is grouped by its name, and also by the module, or the detection engine. In this case, the **event.module** for all alerts is **ossec**. These events are being detected by another piece of software that Security Onion leverages called Wazuh, a host-based intrusion detection system. (The name **ossec** refers to a Wazuh predecessor, OSSEC.) This means Wazuh is installed on our Security Onion VM and is monitoring for potentially malicious activity.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-011.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-011.png)
 12. As suggested by the severity level, these are all routine events. Hover over **sshd authentication success** (with a count of two alerts) and click its row.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-012.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-012.png)
 13. A menu appears. Click **Drilldown**.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-013.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-013.png)
 14. This table displays the individual alerts with the name **sshd authentication success**. Click the arrowhead to twirl down an individual event.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-014.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-014.png)
 15. Scroll down the page to see all of the metadata that Wazuh collected and reported about this event. If you look at the message, you can see that this event was generated when I SSH'd into Security Onion from my host Mac using my SSH key for authentication.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-015.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-015.png)
 16. Scroll back up to the top of the table. Notice the bubble that says **rule.name:"sshd: authentication success."**. This indicates that all the alerts you see are filtered by this rule name. Click the **x** to remove this filter.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-016.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-016.png)
 17. When you see the **Alerts** table reload, it looks different. You see all of the individual rules, and the word **Ungroup** in the text field above. This is the query field where you can enter Security Onion queries to search through your alerts.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-017.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-017.png)
 18. If you click the down arrow next to the query field, you will see several predefined queries, including the default one that was selected when you first came to the **Alerts** page, **Group by Name, Module**. Select this query.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-018.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-018.png)
 19. You are back where you started, with several uninteresting alerts. In the next article, we are going to try and generate our own, more interesting, alerts using the Kali VM to generate malicious traffic for Security Onion to detect.
-   ![](/assets/images/security-onion-images/07-onion-intro/07-onion-intro-019.png)
+   ![](/assets/images/security-onion-images-macos-2022/07-onion-intro-macos-2022/07-onion-intro-macos-2022-019.png)

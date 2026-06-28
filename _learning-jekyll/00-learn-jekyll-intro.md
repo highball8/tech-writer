@@ -17,8 +17,8 @@ In this tutorial, I'm going to provide some instructions on how to get started u
 
 This tutorial is not exhaustive. I'm going to show you how to install Jekyll, start using its commands, create some text and screenshot content in your code editor using Markdown, and then preview and build that site locally. From there I'll show you how I set up the CI/CD pipeline that allows me to push code from my laptop to the AWS cloud where it is served globally by their content distribution network.
 
-{: .note }
-I use angle brackets (`<` and `>`) to enclose placeholder text for filenames, paths, URLs, software versions, or anything where the value may be different for you than it is for me.
+{: .important }
+The "codebase" for this website is a GitHub repository. You can access that repository on GitHub at [https://github.com/highball8/tech-writer](https://github.com/highball8/tech-writer){:target="_blank"} where you can review it and create your own clone of that repo (`https://github.com/highball8/tech-writer.git`).
 
 ## Prerequisites
 
@@ -35,6 +35,9 @@ I created my Jekyll site using:
 * **[GitHub](https://github.com/){:target="_blank"}:**  is an online version of Git where you can push (upload), pull (download), and work on your code, whether it is an enterprise-scale application, Docs as Code, a static website, or even just text. It's widely used for collaboration and release management, because it creates an auditable trail of the history of the code used in an application, and a place for people to work on that code with one another.
 * **[Homebrew](https://brew.sh/){:target="_blank"}** is "The Missing Package Manager for macOS (or Linux)." I'm assuming you know how to configure and use Homebrew (or "Brew"). I used it to install Git, the Ruby programming language that Jekyll runs on, Jekyll, and some other packages and dependencies that make this project possible.
 * **[Amazon Web Services (AWS)](https://aws.amazon.com/){:target="_blank"}:** I use various services from AWS to build and host this website.
+
+{: .note }
+I use angle brackets (`<` and `>`) to enclose placeholder text for filenames, paths, URLs, software versions, or anything where the value may be different for you than it is for me.
 
 ## References
 

@@ -9,7 +9,7 @@ parent: "Create a Static Site Using Jekyll: Introduction"
 
 At this stage, I have changed several things from earlier in the tutorial. Previously, I started a separate Jekyll project to demonstrate and describe the process. The intention was to describe the work from the beginning so that you, the reader, could follow along.
 
-But I already have a Jekyll site, and that is where you are seeing this. I created that site in 2022 and the only real content was the [Security Onion tutorial]({% link _security-onion-series/so-00-tutorial-intro.md %}). But now I want to add this Jekyll tutorial to the existing website. So after I completed the previous work in this tutorial, I:
+But I already have a Jekyll site, and that is where you are seeing this. I created that site in 2022 and the only real content was the [Security Onion tutorial]({% link _security-onion-series-macos-2022/so-00-tutorial-intro-macos-2022.md %}). But now I want to add this Jekyll tutorial to the existing website. So after I completed the previous work in this tutorial, I:
 
 * Cloned the GitHub repository (or "repo") for my production site to my MacBook Pro.
 * Created a directory, `_learning-jekyll` within that local repo, and added all the Markdown files I previously described to that directory. Here's what that directory looks like now:
@@ -92,7 +92,7 @@ In the future, I may go over some other things I have learned about Jekyll from 
 
 * Including Google Fonts locally in your `_site` build
 * Various CSS customizations
-* More detail on collections like my [Security Onion series]({% link _security-onion-series/so-00-tutorial-intro.md %})
+* More detail on collections like my [Security Onion series]({% link _security-onion-series-macos-2022/so-00-tutorial-intro-macos-2022.md %})
 * Jekyll project organization
 * Customizing `_config.yml` and `Gemfile`
 * Adding a custom footer that displays the last time the site was built or published
