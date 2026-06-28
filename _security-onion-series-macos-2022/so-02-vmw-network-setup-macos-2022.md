@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Create VMware Private Virtual Networks for Your Lab
+title: "Create VMware Private Virtual Networks for Your Lab"
 nav_order: 12
 parent: "Security Onion Virtual Lab Tutorial: Introduction (MacOS, 2022)"
 ---

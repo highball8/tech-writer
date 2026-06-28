@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'Security Onion Virtual Lab Tutorial: Introduction (MacOS, 2022)'
+title: "Security Onion Virtual Lab Tutorial: Introduction (MacOS, 2022)"
 nav_order: 10
 has_children: true
 ---

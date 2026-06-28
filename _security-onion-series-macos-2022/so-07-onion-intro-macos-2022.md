@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Using Security Onion and the Security Onion Console
+title: "Using Security Onion and the Security Onion Console"
 nav_order: 17
 parent: "Security Onion Virtual Lab Tutorial: Introduction (MacOS, 2022)"
 ---

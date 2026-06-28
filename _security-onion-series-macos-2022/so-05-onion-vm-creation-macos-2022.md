@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Create the Security Onion Virtual Machine
+title: "Create the Security Onion Virtual Machine"
 nav_order: 15
 parent: "Security Onion Virtual Lab Tutorial: Introduction (MacOS, 2022)"
 ---

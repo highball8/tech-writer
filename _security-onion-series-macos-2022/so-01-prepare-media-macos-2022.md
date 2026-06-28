@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Prepare OPNsense and Security Onion Installation Media
+title: "Prepare OPNsense and Security Onion Installation Media"
 nav_order: 11
 parent: "Security Onion Virtual Lab Tutorial: Introduction (MacOS, 2022)"
 ---
