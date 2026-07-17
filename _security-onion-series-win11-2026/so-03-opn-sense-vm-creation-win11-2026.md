@@ -21,7 +21,7 @@ parent: "Security Onion: Creating a Virtual Lab Environment—Windows 11, 2026"
    ![](/assets/images/security-onion-images-win11-2026/03-opn-sense-vm-creation-win11-2026/03-opn-sense-vm-creation-win11-2026-006.png)
 7. VMware will detect the operating system type based on the ISO. Click **Next**.
    ![](/assets/images/security-onion-images-win11-2026/03-opn-sense-vm-creation-win11-2026/03-opn-sense-vm-creation-win11-2026-007.png)
-8. On the **Name the Virtual Machine** screen, enter a name for the OPNsense VM. I named mine **OPNsense2026**. Then click the **Browse** button to select the location where the VM and its files will be saved to and stored.
+8. On the **Name the Virtual Machine** screen, enter a name for the OPNsense VM. I named mine **OPNsense2026**. Then click the **Browse** button to select the location where the VM and its files will be saved to and stored.  
    ![](/assets/images/security-onion-images-win11-2026/03-opn-sense-vm-creation-win11-2026/03-opn-sense-vm-creation-win11-2026-008.png)
 9. When you create a virtual machine, VMware stores a collection of files and other data in a folder. I have created a folder on my local drive called **onion-virtual-machines**. Within that, I created a new folder and gave it the same name as the VM. Navigate to the location where you want the VM stored and click **OK**. 
    ![](/assets/images/security-onion-images-win11-2026/03-opn-sense-vm-creation-win11-2026/03-opn-sense-vm-creation-win11-2026-009.png)
