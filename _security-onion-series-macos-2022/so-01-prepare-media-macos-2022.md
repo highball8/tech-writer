@@ -2,10 +2,14 @@
 layout: page
 title: "Prepare OPNsense and Security Onion Installation Media"
 nav_order: 11
-parent: "Security Onion Virtual Lab Tutorial: Introduction (MacOS, 2022)"
+parent: "Security Onion: Creating a Virtual Lab Environment—Introduction (MacOS, 2022)"
 ---
 
 # Prepare OPNsense and Security Onion Installation Media
+{: .no_toc }
+
+1. TOC
+{:toc}
 
 In this tutorial you will create two virtual machines (VMs): one OPNsense VM to provide routing for virtualized lab networks, and one VM for the Security Onion Installation. After downloading the installation media needed to create those VMs, verify that the installation media is valid.
 

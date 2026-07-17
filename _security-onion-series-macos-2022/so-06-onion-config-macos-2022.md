@@ -2,7 +2,7 @@
 layout: page
 title: "Configure the Security Onion Virtual Machine"
 nav_order: 16
-parent: "Security Onion Virtual Lab Tutorial: Introduction (MacOS, 2022)"
+parent: "Security Onion: Creating a Virtual Lab Environment—Introduction (MacOS, 2022)"
 ---
 
 # Configure the Security Onion Virtual Machine

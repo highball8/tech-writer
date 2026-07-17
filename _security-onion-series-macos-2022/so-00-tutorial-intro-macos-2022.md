@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "Security Onion Virtual Lab Tutorial: Introduction (MacOS, 2022)"
+title: "Security Onion: Creating a Virtual Lab Environment—Introduction (MacOS, 2022)"
 nav_order: 10
 has_children: true
 ---
 
-# Security Onion Virtual Lab Tutorial: Introduction (MacOS, 2022)
+# Security Onion: Creating a Virtual Lab Environment---Introduction (MacOS, 2022)"
 
 {: .important }
 >I created this tutorial in mid-2022. I am adding this note in June 2026, so much of the content is four years old and has accuracy and currency issues, particularly when it describes in the versions of software like Security Onion and OPNsense that are used to create the environment. For example, the version of Security Onion used is 2.3; Security Onion is now on version 3, and 2.3 is considered end-of-life.
@@ -20,20 +20,20 @@ The centerpiece of the lab is a virtual machine (VM) running [Security Onion](ht
 
 * [Zeek](https://docs.zeek.org/en/master/about.html){:target="_blank"} (formerly known as Bro) analyzes traffic on the network, collects metadata about that traffic and logs all of it, making it a powerful tool for network detection and forensics.
 * [Suricata](https://suricata.readthedocs.io/en/suricata-6.0.5/what-is-suricata.html){:target="_blank"} is a signature-based network intrusion detection system originally developed by the Open Information Security Foundation.
-* The [ELK](https://www.elastic.co/what-is/elk-stack){:target="_blank"} stack, for Elasticsearch, Logstash, and Kibana. The ELK stack receives events in Security Onion logs from Logstash (as well as Filebeat). Elasticsearch is the search and analytics engine. Kibana is a user-interface and visualization tool.
+* The [ELK](https://www.elastic.co/what-is/elk-stack){:target="_blank"} stack, for Elasticsearch, Logstash, and Kibana. The ELK stack serves as a security information and event management (SIEM) platform, receiving events in Security Onion logs from Logstash (as well as Filebeat). Elasticsearch is the search and analytics engine. Kibana is a user-interface and visualization tool.
 
-Security Onion is set up on a private network with a network interface card (NIC) that works in promiscuous mode to "sniff" all of the traffic traversing the network. In practice this can be done by connecting Security Onion to a SPAN or TAP port. Since I am creating my environment virtually on my MacBook Pro, I will need to create some network infrastructure that will allow me to sniff traffic with Security Onion.
+Security Onion is set up on a private network with a network interface card (NIC) that works in promiscuous mode to "sniff" all the traffic traversing the network. In practice this can be done by connecting Security Onion to a SPAN or TAP port. Since I am creating my environment virtually on a Windows desktop, I will need to create some network infrastructure that will allow me to sniff traffic with Security Onion.
 
 The basic components of my virtual lab will be:
 
-* A virtual machine running [OPNsense](https://docs.opnsense.org/intro.html){:target="_blank"}, which is an open-source firewall and networking platform. I will use the OPNsense VM as a virtual router to create a local area network (LAN) that the other lab virtual machine will connect to. OPNsense provides the LAN so that these virtual machines can talk to each other, and it also connects them to the wide area network (WAN), or public internet, for things like updates. Using OPNsense also gives me the ability to connect Security Onion to the LAN and sniff traffic.
+* A virtual machine running [OPNsense](https://docs.opnsense.org/intro.html){:target="_blank"}, an open-source firewall and networking platform. I will use the OPNsense VM as a virtual router to create a local area network (LAN) that the other lab virtual machines will connect to. OPNsense provides the LAN so that these virtual machines can talk to each other, and it can also connect them to the wide area network (WAN), or public internet, for things like updates. Using OPNsense also gives me the ability to connect Security Onion to the LAN and sniff traffic.
 * A virtual machine running Security Onion. This tutorial will go over how to set up a Security Onion deployment that monitors the virtual lab and some basics on what Security Onion does and how to use it. Then we will create some malicious traffic on the network and see if Security Onion detects it.
 * A [Kali Linux](https://www.kali.org/){:target="_blank"} virtual machine. I'm going to use Kali as an endpoint on the network that I can use to monitor the network and interact with it. But the primary use of Kali Linux is for penetration testing and other security research, so I will also be using Kali to reconnoiter and attack other virtual machines on the network, generating traffic that Security Onion should identify as malicious.
 * Target virtual machines. I will start with [Metasploitable 3](https://github.com/rapid7/metasploitable3){:target="_blank"} VMs running both Ubuntu and Windows Server 2008. I may also use [Metasploitable 2](https://sourceforge.net/projects/metasploitable/){:target="_blank"}. These are virtual machines that intentionally include many security vulnerabilities that can be exploited with tools in Kali such as Metasploit.
 
 ## Overview
 
-The first set of how-to articles on this site will make up a tutorial on everything I needed to do to create my Security Onion-monitored virtual lab. Just that part itself is a considerable amount of work... and it doesn't always work for me. I think the articles provide good lessons on a variety of skills needed to administer virtual machines, manage a network, and more. Here's what the first articles will cover:
+The first set of how-to articles on this site will make up a tutorial on everything I needed to do to create a Security Onion-monitored virtual lab on a MacBook Pro. Just that part itself is a considerable amount of work... and it doesn't always work for me. I think the articles provide good lessons on a variety of skills needed to administer virtual machines, manage a network, and more. Here's what the first articles will cover:
 
 1. [Prepare Your Installation Media]({% link _security-onion-series-macos-2022/so-01-prepare-media-macos-2022.md %}): Some instructions on downloading and validating OPNsense and Security Onion and preparing them for installation in VMware Fusion Pro.
 

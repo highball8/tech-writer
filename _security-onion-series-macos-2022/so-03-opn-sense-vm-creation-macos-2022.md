@@ -2,7 +2,7 @@
 layout: page
 title: "Create the OPNsense Virtual Machine"
 nav_order: 13
-parent: "Security Onion Virtual Lab Tutorial: Introduction (MacOS, 2022)"
+parent: "Security Onion: Creating a Virtual Lab Environment—Introduction (MacOS, 2022)"
 ---
 
 # Create the OPNsense Virtual Machine
