@@ -6,6 +6,10 @@ parent: "Create a Static Site Using Jekyll: Introduction"
 ---
 
 # Building Your Jekyll Site
+{: .no_toc }
+
+1. TOC
+{:toc}
 
 The preceding pages cover my introduction to how you create and organize content for a Jekyll site. Now I will show you how to convert your Markdown pages and accompanying images into a static HTML website.
 

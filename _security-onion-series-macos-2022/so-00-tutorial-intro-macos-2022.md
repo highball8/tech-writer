@@ -65,3 +65,6 @@ This tutorial requires you to have some familiarity with and knowledge of deskto
 
 {: .note }
 I use angle brackets (`<` and `>`) to enclose placeholder text for filenames, paths, URLs, software versions, or anything where the value may be different for you than it is for me.
+
+{: .new }
+I have to recognize the educational resource that set me on the right path for understanding the creation of the network environment needed for a Security Onion deployment. I learned the necessary concepts back in 2020 in a YouTube video from [I.T Security Labs](https://www.youtube.com/@ITSecurityLabs/featured){:target="_blank"} called [Set up Security Onion in vMware workstation or Virtualbox using pfSense port mirror \| Kibana Graphs](https://www.youtube.com/watch?v=c2ozyJ9rwOQ){:target="_blank"}. It took me a minute to understand all of it. Thank you to @ITSecurityLabs.

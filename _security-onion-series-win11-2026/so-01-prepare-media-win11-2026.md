@@ -6,6 +6,10 @@ parent: "Security Onion: Creating a Virtual Lab Environment—Windows 11, 2026"
 ---
 
 # Prepare OPNsense and Security Onion Installation Media
+{: .no_toc }
+
+1. TOC
+{:toc}
 
 In this tutorial you will create two virtual machines (VMs): one OPNsense VM to provide routing for virtualized lab networks, and one VM to run Security Onion. On this page you are going to download the installation media needed to create those VMs and verify that the installation media is valid.
 

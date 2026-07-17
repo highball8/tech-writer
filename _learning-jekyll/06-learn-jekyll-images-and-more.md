@@ -6,16 +6,15 @@ parent: "Create a Static Site Using Jekyll: Introduction"
 ---
 
 # Add Images, Links, and More to Your Jekyll Pages
+{: .no_toc }
 
 ## Overview
+{: .no_toc }
 
 This is not an in-depth course on Jekyll. This site you are looking at represents the entirety of my Jekyll experience, so in the spirit of keeping it basic, I'm only going to cover what I needed to create what you are looking at.
 
-* [Adding Images to Your Jekyll Posts and Pages](#adding-images-to-your-jekyll-posts-and-pages)
-* [Hyperlinks in Jekyll](#hyperlinks-in-jekyll)
-* [Use SASS to Apply Custom CSS to Your Jekyll Site](#use-sass-to-apply-custom-css-to-your-jekyll-site)
-* [Use Plugins to Add Functionality to Your Jekyll Website](#use-plugins-to-add-functionality-to-your-jekyll-website)
-* [Add Google Analytics to Your Jekyll Site](#add-google-analytics-to-your-jekyll-site)
+1. TOC
+{:toc}
 
 ## Adding Images to Your Jekyll Posts and Pages
 

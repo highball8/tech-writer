@@ -220,7 +220,7 @@ h6 {
   font-family: 'Raleway', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 800;
   line-height: $body-heading-line-height;
-  color: #0050d8;
+  color: #1a4480;
 }
 
 body {
@@ -234,7 +234,7 @@ code, code.language-plaintext.highlighter-rouge {
 }
 
 a {
-  color: #28a0cb;
+  color: #0050d8;
 }
 
 //  May 23, 2026: Wrapping Code Blocks
@@ -289,9 +289,10 @@ p.important, blockquote.important {
   background-color: #97d4ea;
 }
 
-p.important.a {
-  color: #07648d;
-}
+// Probably do not need this after declaring `a` the same color around line 236
+// p.important.a {
+//   color: #0050d8;
+// }
 
 .main-content blockquote.important {
   background-color: #73b3e7;
@@ -318,9 +319,9 @@ p.new-title, p.new::before {
 }
 
 p.new {
-  border: 1px #04c585 solid;
+  border: 1px #82e2c2 solid;
   border-left: 4px solid #538200;
-  background-color: #04c585;
+  background-color: #82e2c2;
 }
 
 // https://designsystem.digital.gov/utilities/color/

@@ -6,10 +6,15 @@ parent: "Create a Static Site Using Jekyll: Introduction"
 ---
 
 # Automating the Build and Deployment of Your Jekyll Site
+{: .no_toc }
 
 ## Overview
+{: .no_toc }
 
 In the previous pieces of this tutorial, I showed you how to start, develop the content for, organize, and "build" your Jekyll static site. Now I will show you how to take that to the next level by syncing your local content with a GitHub repository and integrating that GitHub repository with several Amazon Web Services (AWS) products and services to create a CI/CD pipeline that will automate the publishing of your Jekyll site to an AWS S3 bucket that will host the website.
+
+1. TOC
+{:toc}
 
 ## Storing Your Repository in GitHub
 

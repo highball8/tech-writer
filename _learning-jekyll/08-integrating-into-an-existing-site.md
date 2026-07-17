@@ -6,6 +6,10 @@ parent: "Create a Static Site Using Jekyll: Introduction"
 ---
 
 # Integrating Learning Jekyll Into An Existing Site
+{: .no_toc }
+
+1. TOC
+{:toc}
 
 At this stage, I have changed several things from earlier in the tutorial. Previously, I started a separate Jekyll project to demonstrate and describe the process. The intention was to describe the work from the beginning so that you, the reader, could follow along.
 
