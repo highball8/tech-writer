@@ -6,25 +6,29 @@ has_children: true
 ---
 
 # Security Onion: Creating a Virtual Lab Environment---Windows 11, 2026
+{: .no_toc }
 
 {: .important }
 This is an updated version of my original tutorial about how to set up a virtualized lab environment monitored by Security Onion. You can see the original version from 2022, which uses macOS and VMware Fusion Pro, at [Security Onion Virtual Lab Tutorial: Introduction (MacOS, 2022)]({% link _security-onion-series-macos-2022/so-00-tutorial-intro-macos-2022.md %}).
 
-This series of how-to articles walks you through how to set up your own virtual lab for information security research using virtual machines (VMs). I am using [VMware Workstation Pro](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion){:target="_blank"}, which is a Type 2 hypervisor used for desktop virtualization on host operating systems running Windows.
+1. TOC
+{:toc}
+
+This series of how-to articles describes how to set up your own virtual lab for information security research using virtual machines (VMs). I am using [VMware Workstation Pro](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion){:target="_blank"}, which is a Type 2 hypervisor used for desktop virtualization on host operating systems running Windows.
 
 The centerpiece of the lab is a virtual machine (VM) running [Security Onion](https://securityonionsolutions.com/){:target="_blank"}, which is an open-source network intrusion detection system (NIDS) and network security monitor (NSM). Security Onion uses containers to give users a wide variety of tools that allow for network monitoring and alerting, threat hunting, and more. It utilizes well-known, widely used open-source applications, including:
 
 * [Zeek](https://docs.zeek.org/en/master/about.html){:target="_blank"} (formerly known as Bro) analyzes traffic on the network, collects metadata about that traffic and logs all of it, making it a powerful tool for network detection and forensics.
 * [Suricata](https://suricata.readthedocs.io/en/suricata-6.0.5/what-is-suricata.html){:target="_blank"} is a signature-based network intrusion detection system originally developed by the Open Information Security Foundation.
-* The [ELK](https://www.elastic.co/what-is/elk-stack){:target="_blank"} stack, for Elasticsearch, Logstash, and Kibana. The ELK stack serves as a security information and event management (SIEM) platform, receiving events in Security Onion logs from Logstash (as well as Filebeat). Elasticsearch is the search and analytics engine. Kibana is a user-interface and visualization tool.
+* The [ELK](https://www.elastic.co/what-is/elk-stack){:target="_blank"} stack, for Elasticsearch, Logstash, and Kibana. The ELK stack serves as a security information and event management (SIEM) platform, receiving Security Onion's log events from Logstash (as well as Filebeat). Elasticsearch is the search and analytics engine. Kibana is a user-interface and visualization tool.
 
-Security Onion is set up to monitor a private network using a network interface card (NIC) that works in promiscuous mode to "sniff" all the traffic traversing the network. In practice this can be done by connecting Security Onion to a SPAN or TAP port. Since I am creating my environment virtually on my MacBook Pro, I will need to create some network infrastructure that will allow me to sniff traffic with Security Onion.
+Security Onion is set up to monitor a private network using a network interface card (NIC) that works in promiscuous mode to "sniff" all the traffic traversing the network. In practice this can be done by connecting Security Onion to a SPAN or TAP port. Since I am creating my environment virtually on a Windows desktop, I will need to create some network infrastructure that will allow me to sniff traffic with Security Onion.
 
 The basic components of my virtual lab will be:
 
 * A virtual machine running [OPNsense](https://docs.opnsense.org/intro.html){:target="_blank"}, an open-source firewall and networking platform. I will use the OPNsense VM as a virtual router to create isolated virtual networks within VMware Workstation Pro, including a local area network (LAN) that the other lab virtual machines will connect to. OPNsense provides the LAN so that these virtual machines can talk to each other, and it can also connect them to the wide area network (WAN), or public internet, for things like updates. Using OPNsense also gives me the ability to connect Security Onion to the LAN and sniff traffic.
-* A virtual machine running Security Onion. This tutorial will go over how to set up a Security Onion deployment that monitors the virtual lab and some basics on what Security Onion does and how to use it. Then we will create some malicious traffic on the network and see if Security Onion detects it.
-* A [Kali Linux](https://www.kali.org/){:target="_blank"} virtual machine. I'm going to use Kali as an endpoint on the network that I can use to monitor and manage the network and interact with it. But the primary use of Kali Linux is for penetration testing and other security research, so I will also be using Kali to reconnoiter and attack other virtual machines on the network, generating traffic that Security Onion will identify as malicious.
+* A virtual machine running Security Onion. This tutorial will go over how to set up a Security Onion deployment that monitors the virtual lab and some basics on what Security Onion does and how to use it.
+* A [Kali Linux](https://www.kali.org/){:target="_blank"} virtual machine. I'm going to use Kali to manage the OPNsense router. But the primary use of Kali Linux is for penetration testing and other security research, so I will also be using Kali to reconnoiter and attack other virtual machines on the network, generating traffic that Security Onion will identify as malicious.
 * Target virtual machines. I will start with [Metasploitable 3](https://github.com/rapid7/metasploitable3){:target="_blank"} VMs running both Ubuntu and Windows Server 2008. I may also use [Metasploitable 2](https://sourceforge.net/projects/metasploitable/){:target="_blank"}. These are virtual machines that intentionally include many security vulnerabilities that can be exploited with tools in Kali such as [Metasploit](https://www.metasploit.com/){:target="_blank"}.
 
 ## Overview
@@ -35,9 +39,9 @@ This set of how-to articles will make up a tutorial on everything I needed to do
 
    * **Note:** Installation instructions for other VMs, like Kali or Metasploitable, are out of scope for this tutorial, but I hope to come back and cover them later.
 
-2. [Create VMware Private Virtual Networks for the Security Onion Environment]({% link _security-onion-series-win11-2026/so-02-vmw-network-setup-win11-2026.md %}): Create a private virtual network within VMware Fusion Pro.
+2. [Create VMware Private Virtual Networks for the Security Onion Environment]({% link _security-onion-series-win11-2026/so-02-vmw-network-setup-win11-2026.md %}): Create private virtual networks within VMware Fusion Pro.
 3. [Create the OPNsense Virtual Machine]({% link _security-onion-series-win11-2026/so-03-opn-sense-vm-creation-win11-2026.md %}): Create a virtual machine where you will install and configure OPNsense.
-4. [Configure the OPNsense Virtual Machine]({% link _security-onion-series-win11-2026/so-04-opn-sense-config-win11-2026.md %}): Set up OPNsense and use it to create the routing capabilities you need for your private virtual network.
+4. [Configure the OPNsense Virtual Machine]({% link _security-onion-series-win11-2026/so-04-opn-sense-config-win11-2026.md %}): Set up OPNsense and use it to create the routing capabilities you need for your private virtual networks.
 5. [Create the Security Onion Virtual Machine]({% link _security-onion-series-win11-2026/so-05-onion-vm-creation-win11-2026.md %}): Create a virtual machine where you will install and configure Security Onion.
 6. [Configure the Security Onion Virtual Machine]({% link _security-onion-series-win11-2026/so-06-onion-config-win11-2026.md %}): Walk through Security Onion's installation wizard to deploy the tool.
 

@@ -2,16 +2,19 @@
 layout: page
 title: "Prepare OPNsense and Security Onion Installation Media"
 nav_order: 11
-parent: "Security Onion: Creating a Virtual Lab Environment—Introduction (MacOS, 2022)"
+parent: "Security Onion: Creating a Virtual Lab Environment—macOS, 2022"
 ---
 
 # Prepare OPNsense and Security Onion Installation Media
 {: .no_toc }
 
+{: .important }
+I created this tutorial in mid-2022. In mid-2026 the content is over four years old and has accuracy and currency issues, particularly when it describes older versions of Security Onion and OPNsense. While this tutorial is no longer current, I am leaving it up because it is a professional writing sample that I put a lot of work into and it may still be useful to some readers. For more information, see [Security Onion: Creating a Virtual Lab Environment---macOS, 2022]({% link _security-onion-series-macos-2022/so-00-tutorial-intro-macos-2022.md %}).
+
 1. TOC
 {:toc}
 
-In this tutorial you will create two virtual machines (VMs): one OPNsense VM to provide routing for virtualized lab networks, and one VM for the Security Onion Installation. After downloading the installation media needed to create those VMs, verify that the installation media is valid.
+In this tutorial you will create two virtual machines (VMs): one OPNsense VM to provide routing for virtualized lab networks, and one VM to run Security Onion. On this page you are going to download the installation media needed to create those VMs and verify that the installation media is valid.
 
 ## Download, Validate, and Prepare the OPNsense Installation Media
 
@@ -47,7 +50,7 @@ In this tutorial you will create two virtual machines (VMs): one OPNsense VM to 
 
 Your OPNsense ISO is ready for installation.
 
-### Download, Validate, and Prepare the Security Onion Installation Media
+## Download, Validate, and Prepare the Security Onion Installation Media
 
 1. You can download the [current Security Onion ISO from their GitHub](https://github.com/Security-Onion-Solutions/securityonion/blob/3/main/DOWNLOAD_AND_VERIFY_ISO.md){:target="_blank"}.
    ![](/assets/images/security-onion-images-macos-2022/01-iso-prep-macos-2022/01-iso-prep-macos-2022-008.png)

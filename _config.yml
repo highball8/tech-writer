@@ -64,7 +64,7 @@ just_the_docs:
     security-onion-series-win11-2026:
       name: Security Onion Series (Windows 11, 2026)
     security-onion-series-macos-2022:
-      name: Security Onion Series (MacOS, 2022)
+      name: Security Onion Series (macOS, 2022)
 
 # Additional In-page Navigation (https://just-the-docs.com/docs/navigation/in-page/)
 back_to_top: true

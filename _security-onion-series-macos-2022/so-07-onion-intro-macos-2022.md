@@ -2,10 +2,17 @@
 layout: page
 title: "Using Security Onion and the Security Onion Console"
 nav_order: 17
-parent: "Security Onion: Creating a Virtual Lab Environment—Introduction (MacOS, 2022)"
+parent: "Security Onion: Creating a Virtual Lab Environment—macOS, 2022"
 ---
 
 # Using Security Onion and the Security Onion Console
+{: .no_toc }
+
+{: .important }
+I created this tutorial in mid-2022. In mid-2026 the content is over four years old and has accuracy and currency issues, particularly when it describes older versions of Security Onion and OPNsense. While this tutorial is no longer current, I am leaving it up because it is a professional writing sample that I put a lot of work into and it may still be useful to some readers. For more information, see [Security Onion: Creating a Virtual Lab Environment---macOS, 2022]({% link _security-onion-series-macos-2022/so-00-tutorial-intro-macos-2022.md %}).
+
+1. TOC
+{:toc}
 
 This section provides a basic overview of how you can use Security Onion. Security Onion can do so much, and that is all out of scope for this tutorial, though I hope to fill in the gaps later. This section provides a quick introduction to the Security Onion Console and in particular its **Alerts** page and how to use it.
 

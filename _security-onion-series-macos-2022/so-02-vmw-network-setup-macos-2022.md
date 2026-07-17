@@ -2,29 +2,33 @@
 layout: page
 title: "Create VMware Private Virtual Networks for the Security Onion Environment"
 nav_order: 12
-parent: "Security Onion: Creating a Virtual Lab Environment—Introduction (MacOS, 2022)"
+parent: "Security Onion: Creating a Virtual Lab Environment—macOS, 2022"
 ---
 
 # Create VMware Private Virtual Networks for Your Lab
 {: .no_toc }
+
+{: .important }
+I created this tutorial in mid-2022. In mid-2026 the content is over four years old and has accuracy and currency issues, particularly when it describes older versions of Security Onion and OPNsense. While this tutorial is no longer current, I am leaving it up because it is a professional writing sample that I put a lot of work into and it may still be useful to some readers. For more information, see [Security Onion: Creating a Virtual Lab Environment---macOS, 2022]({% link _security-onion-series-macos-2022/so-00-tutorial-intro-macos-2022.md %}).
 
 1. TOC
 {:toc}
 
 These steps detail how you can use VMware Fusion Pro's networking capabilities to create two private virtual networks. You will connect your different virtual machines (VMs) to these networks so that the VMs can interact with one another, and reach out to the public internet to download updates, browse the internet, etc.
 
-**Note:** Per [VMware's documentation](https://docs.vmware.com/en/VMware-Fusion/12/com.vmware.fusion.using.doc/GUID-DEB1FB99-0E44-4AAA-9693-6C2687098F13.html){:target="_blank"}, "private virtual networks (vmnet) configurations... only allow communication between virtual machines and the host system."
+**Note:** Per [VMware's documentation](https://techdocs.broadcom.com/us/en/vmware-cis/desktop-hypervisors/fusion-pro/26H1/using-vmware-fusion/configuring-vmware-fusion/setting-fusion-preferences/creating-custom-networks/add-a-private-network-configuration.html){:target="_blank"}, "private virtual networks (vmnet) configurations... only allow communication between virtual machines and the host system."
 
 ## Private Virtual Network Overview and Topology
 
 In this scenario you use the VMware's networking feature to create two private virtual networks:
 
-* **EXTERNAL_NET_LAN**: This will be a private virtual network that you will connect a Kali VM to, and then use the browser of the Kali VM to access the management web user interface of the OPNsense router. It is *also* the network that will simulate a public wide area network (WAN) from which the Kali VM will reconnoiter and attack the network monitored by the Security Onion deployment. In this article, you assign this network the IP address range of 10.10.9.0/24.
-* **HOME_NET_LAN:** This private virtual network acts as the local-area network that Security Onion will monitor. This network is assigned the IP address range of 10.10.10.0/24. You will use that same address range when configuring Security Onion. We will connect virtual machines like Metasploitable to this network, where they can act as targets monitored by Security Onion.
+* **EXTERNAL_NET_LAN**: This will be a private virtual network that you will connect a Kali VM to. The Kali VM will access the management web user interface of the OPNsense router. It is *also* the network that will ***simulate*** a public wide area network (WAN) from which the Kali VM will reconnoiter and attack the network monitored by the Security Onion deployment. In this tutorial, you assign this network the EXTERNAL_NET_LAN network an IP address range of **10.10.9.0/24**.
+* **HOME_NET_LAN:** This private virtual network acts as the local-area network (LAN) that Security Onion will monitor. This network is assigned the IP address range of **10.10.10.0/24**. You will use that same address range when configuring Security Onion. We will connect virtual machines like Metasploitable to this network, where they can act as targets monitored by Security Onion.
 
 Once you have created the private virtual networks, you will attach the virtual network adapters of the various virtual machines to these networks.
 
-A note on the network names: I got the names **EXTERNAL_NET** and **HOME_NET** from one of the most important parts of Security Onion, the Suricata intrusion detection system (IDS). When setting up Security Onion, you are asked to provide your network segments you want to monitor in CIDR notation (using RFC1918 network addresses). These are your "home networks." Suricata signature-based detection rules (which are, in turn, based on Snort, an earlier IDS), use `$EXTERNAL_NET` and `$HOME_NET` to establish traffic directionality -- what is on your network is `$HOME_NET`, what is outside of your network is everything else, `$EXTERNAL_NET`. In many cases, malicious traffic needs to either come from or go to `$EXTERNAL_NET` for it to match a Suricata rule, which is why this tutorial needs both networks.
+{: .note}
+A note on the network names: I got the names **EXTERNAL_NET** and **HOME_NET** from one of the most important parts of Security Onion, the Suricata intrusion detection system (IDS). Suricata signature-based detection rules (which are, in turn, based on Snort, an earlier IDS), use `$EXTERNAL_NET` and `$HOME_NET` to establish traffic directionality---what is on the network that you manage and are seeking to monitor and detect is `$HOME_NET`. What is outside of your network is everything else, `$EXTERNAL_NET`. In many cases, malicious traffic needs to either come from or go to `$EXTERNAL_NET` for it to match a Suricata rule, which is why you need to declare both networks to build the lab environment.
 
 * OPNsense router:
 
@@ -34,7 +38,7 @@ A note on the network names: I got the names **EXTERNAL_NET** and **HOME_NET** f
 
 * Security Onion network intrusion detection system:
 
-  * **Network Adapter:** Connect to the host MacBook Pro using **Bridged Networking** > **Autodetect** so that you can access Security Onion via SSH and the Security Onion Console using your browser on your Mac. Think of this as the "management network" connection.
+  * **Network Adapter:** Connect to the host MacBook Pro using **Bridged Networking** > **Autodetect** so that you can access Security Onion via SSH and the Security Onion Console using your browser on your host Mac. Think of this as the "management network" connection.
   * **Network Adapter 2:** This network adapter acts as a "sniffer" interface and will connect to the **HOME_NET_LAN** (10.10.10.0/24) subnet to monitor traffic.
 
 * Kali virtual machine:

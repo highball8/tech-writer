@@ -2,10 +2,13 @@
 layout: page
 title: "Configure the Security Onion Virtual Machine"
 nav_order: 16
-parent: "Security Onion: Creating a Virtual Lab Environment—Introduction (MacOS, 2022)"
+parent: "Security Onion: Creating a Virtual Lab Environment—macOS, 2022"
 ---
 
 # Configure the Security Onion Virtual Machine
+
+{: .important }
+I created this tutorial in mid-2022. In mid-2026 the content is over four years old and has accuracy and currency issues, particularly when it describes older versions of Security Onion and OPNsense. While this tutorial is no longer current, I am leaving it up because it is a professional writing sample that I put a lot of work into and it may still be useful to some readers. For more information, see [Security Onion: Creating a Virtual Lab Environment---macOS, 2022]({% link _security-onion-series-macos-2022/so-00-tutorial-intro-macos-2022.md %}).
 
 1. Start the VM by clicking the playhead icon or from the **Virtual Machine** menu.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-001.png)
@@ -29,41 +32,41 @@ parent: "Security Onion: Creating a Virtual Lab Environment—Introduction (MacO
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-010.png)
 11. Leave **Install Run the standard Security Onion installation** and use the tab key to select **Ok** then press `Enter`.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-011.png)
-12. **EVAL** is selected by default. While the evaluation installation should work for the defined use case, use the down arrow key to select **STANDALONE**, which is a production installation of a single Security Onion host, then select **OK** and press `Enter`.
+12. **EVAL** is selected by default. While the evaluation installation should work for the defined use case, use the down arrow key to select **STANDALONE**, which is a production installation of a single Security Onion host, then select **Ok** and press `Enter`.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-012.png)
-13. Type `agree` to agree to the terms of the Elastic license, then select **OK**.
+13. Type `agree` to agree to the terms of the Elastic license, then select **Ok**.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-013.png)
-14. Give your Security Onion deployment a name and select **OK**.
+14. Give your Security Onion deployment a name and select **Ok**.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-014.png)
-15. You can also enter a short description for your Security Onion, or just leave it blank, select **OK** and press `Enter`.
+15. You can also enter a short description for your Security Onion, or just leave it blank, select **Ok** and press `Enter`.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-015.png)
-16. You are prompted to select the **management NIC**. As we did with the OPNsense VM, use the VM's **Network Adapter** settings to confirm the MAC address for the correct network adapter. In this case, I am choosing **ens33**, which has a MAC address ending in **39:54**, which matches the first network adapter on the VM, which I have in bridged mode. In the Security Onion setup wizard, use the spacebar to select **ens33**, then select **OK**.
+16. You are prompted to select the **management NIC**. As we did with the OPNsense VM, use the VM's **Network Adapter** settings to confirm the MAC address for the correct network adapter. In this case, I am choosing **ens33**, which has a MAC address ending in **39:54**, which matches the first network adapter on the VM, which I have in bridged mode. In the Security Onion setup wizard, use the spacebar to select **ens33**, then select **Ok**.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-016.png)
-17. Because I don't have a real management network and I am connecting the management interface to my home, physical network which already uses DHCP addressing, I use the down arrow key and spacebar to select **DHCP** and then select **OK**.
+17. Because I don't have a real management network and I am connecting the management interface to my home, physical network which already uses DHCP addressing, I use the down arrow key and spacebar to select **DHCP** and then select **Ok**.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-017.png)
 18. If you select DHCP, you will get a warning from Security Onion reminding you that a DHCP-assigned address could change, and you might have problems connecting to the management interface of Security Onion. This is not an issue in my case, so I select **Yes** to keep DHCP.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-018.png)
-19. Select **OK** when you see **Setup will now initialize networking** and press `Enter`.
+19. Select **Ok** when you see **Setup will now initialize networking** and press `Enter`.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-019.png)
-20. Since we are not airgapping this system or this network, leave **Standard** selected and select **OK**.
+20. Since we are not airgapping this system or this network, leave **Standard** selected and select **Ok**.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-020.png)
-21. When asked **How would you like to connect to the Internet?** I select **Direct** since I am not using a proxy.
+21. When asked **How would you like to connect to the Internet?**, select **Direct**, then **Ok**.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-021.png)
 22. A progress bar displays.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-022.png)
 23. When asked to select the **Monitor Interface**, I only have one option, which matches with the VM network adapter connected to the HOME_NET_LAN. This is what I want, so I select **ens34** and proceed.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-023.png)
-24. For **Choose OS patch schedule**, leave **Automatic** selected and select **OK**.
+24. For **Choose OS patch schedule**, leave **Automatic** selected and select **Ok**.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-024.png)
-25. The field for **your home network(s)** is prepopulated with RFC1918 IP addresses using CIDR notation. Since this Security Onion will monitor a single network created with VMware Fusion Pro and the OPNsense VM, HOME_NET_LAN, clear the default values. (You can use `Control` + `u`.) Then enter the IP address range for the HOME_NET_LAN using the correct CIDR notation: **10.10.10.0/24**, select **OK** and press `Enter`.
+25. The field for **your home network(s)** is prepopulated with RFC1918 IP addresses using CIDR notation. Since this Security Onion will monitor a single network created with VMware Fusion Pro and the OPNsense VM, HOME_NET_LAN, clear the default values. (You can use `Control` + `u`.) Then enter the IP address range for the HOME_NET_LAN using the correct CIDR notation: **10.10.10.0/24**, select **Ok** and press `Enter`.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-025.png)
-26. Keep the default manager type, **Basic**, selected, select **OK** and press `Enter`.
+26. Keep the default manager type, **Basic**, selected, select **Ok** and press `Enter`.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-026.png)
-27. When you are prompted for which tool you want to generate metadata, keep **Zeek** selected, select **OK** and press `Enter`.
+27. When you are prompted for which tool you want to generate metadata, keep **Zeek** selected, select **Ok** and press `Enter`.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-027.png)
-28. You are asked to select the ruleset that Suricata will use to detect malicious activity on the network. Keep **ETOPEN** selected since it is a free, open-source ruleset, then select **OK** and press `Enter`.
+28. You are asked to select the ruleset that Suricata will use to detect malicious activity on the network. Keep **ETOPEN** selected since it is a free, open-source ruleset, then select **Ok** and press `Enter`.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-028.png)
-29. Security Onion lets you choose whether or not you want to run additional, optional services. The understanding is that more services use more RAM, and you can deselect some of the services to conserve resources. All items are selected by default. You can use the spacebar to unselect items, then select **OK**.
+29. Security Onion lets you choose whether or not you want to run additional, optional services. The understanding is that more services use more RAM, and you can deselect some of the services to conserve resources. All items are selected by default. You can use the spacebar to unselect items, then select **Ok**.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-029.png)
 30. Select **Yes** to keep the default Docker IP range.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-030.png)
@@ -73,15 +76,15 @@ parent: "Security Onion: Creating a Virtual Lab Environment—Introduction (MacO
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-032.png)
 33. Enter the password again.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-033.png)
-34. The wizard asks if you want to use an IP address or a hostname to navigate to the Security Onion Console. This example skips the management network approach and assigns the Security Onion management NIC an IP address on my home network, so I leave **IP** selected and then select **OK**.
+34. The wizard asks if you want to use an IP address or a hostname to navigate to the Security Onion Console. This example skips the management network approach and assigns the Security Onion management NIC an IP address on my home network, so I leave **IP** selected and then select **Ok**.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-034.png)
-35. You are prompted to set a password for the **soremote** user, which you would use in a distributed deployment of multiple Security Onion hosts. Select **OK**.
+35. You are prompted to set a password for the **soremote** user, which you would use in a distributed deployment of multiple Security Onion hosts. Select **Ok**.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-035.png)
 36. Enter a password for the **soremote** account.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-036.png)
 37. Enter the password again.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-037.png)
-38. When asked for the type of configuration you want for you Security Onion deployment, keep **Basic** selected, then select **OK** and press `Enter`.
+38. When asked for the type of configuration you want for you Security Onion deployment, keep **Basic** selected, then select **Ok** and press `Enter`.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-038.png)
 39. You are prompted for the number of **Zeek processes** that you want running. Because this is for demonstration and I don't want it to consume too many resources, I leave the default of **1**.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-039.png)
@@ -89,9 +92,9 @@ parent: "Security Onion: Creating a Virtual Lab Environment—Introduction (MacO
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-040.png)
 41. Select **Yes** to **configure ntp servers**.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-041.png)
-42. Leave the default NTP servers and select **OK**.
+42. Leave the default NTP servers and select **Ok**.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-042.png)
-43. Leave the **config** type of **NODEBASIC Install Search Node with recommended settings** defaults and select **OK**.
+43. Leave the **config** type of **NODEBASIC Install Search Node with recommended settings** defaults and select **Ok**.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-043.png)
 44. The **so-allow** command opens up the management interface of your Security Onion installation to an IP address range from which clients can navigate to the web management interface or connect over SSH. Select **Yes**.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-044.png)
@@ -103,7 +106,7 @@ parent: "Security Onion: Creating a Virtual Lab Environment—Introduction (MacO
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-047.png)
 48. A progress bar displays Security Onion installation phases. In my experience, the process takes at least 20 minutes to complete, depending on host system resources.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-048.png)
-49. When the process is complete, you see a confirmation message saying that the installation succeeded. It also provides the URL you use to access the Security Onion Console. Press `Enter` to select **OK** and reboot the VM.
+49. When the process is complete, you see a confirmation message saying that the installation succeeded. It also provides the URL you use to access the Security Onion Console. Press `Enter` to select **Ok** and reboot the VM.
    ![](/assets/images/security-onion-images-macos-2022/06-onion-config-macos-2022/06-onion-config-macos-2022-049.png)
 
 **Note:** Consider shutting down the Security Onion VM and taking a snapshot.

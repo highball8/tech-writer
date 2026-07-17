@@ -108,7 +108,7 @@ Now that the WAN and LAN interfaces are assigned and you can access the web grap
 
 ## Log in to the OPNsense Web GUI and Complete Networking Configuration
 
-### Use a Separate Host to Log in to OPNsense and Complete the System Configuration Wizard
+### Use a Separate VM to Log in to OPNsense and Complete the System Configuration Wizard
 
 1. At this point, you need another VM to connect to the OPNsense router's Web GUI. Since I already have a Kali VM that I will be using as part of this series of tutorials, I drag that into my **Security-Onion-2026** folder.
    ![](/assets/images/security-onion-images-win11-2026/04-opn-sense-config-win11-2026/04-opn-sense-config-win11-2026-029.png)
