@@ -32,11 +32,11 @@ In this tutorial you will create two virtual machines (VMs): one OPNsense VM to 
    ![](/assets/images/security-onion-images-win11-2026/01-iso-prep-win11-2026/01-iso-prep-win11-2026-006.png)
 5. Move these files from your local machine's download folder into their own folder. In this series I am going to put my installation media in a folder called **onion-isos**.
    ![](/assets/images/security-onion-images-win11-2026/01-iso-prep-win11-2026/01-iso-prep-win11-2026-007.png)
-6. Next I will check that the has on the file matches what is on the OPNsense downloads page. Open a command line application. In this case I am using PowerShell, which I can open by typing **powershell** in the search bar in the taskbar and then clicking **Windows PowerShell** in the results.
+6. Next I will check that the hash on the file matches what is on the OPNsense downloads page. Open a command line application. In this case I am using PowerShell, which I can open by typing **powershell** in the search bar in the taskbar and then clicking **Windows PowerShell** in the results.
    ![](/assets/images/security-onion-images-win11-2026/01-iso-prep-win11-2026/01-iso-prep-win11-2026-008.png)
 7. On the command line, navigate to the folder where you put the OPNsense files.\\
 `> cd D:\onion-isos\`
-8. Now use `certutil` to check the SHA256 has of the file you downloaded from OPNsense.org:\\ `> certutil.exe -hashfile .\OPNsense-26.1.6-dvd-amd64.iso.bz2 SHA256`.
+8. Now use `certutil` to check the SHA256 hash of the file you downloaded from OPNsense.org:\\ `> certutil.exe -hashfile .\OPNsense-26.1.6-dvd-amd64.iso.bz2 SHA256`.
 
 9. The output of the command shows the hash:
 
@@ -64,7 +64,7 @@ Your OPNsense ISO is ready for installation.
 1. You can download the [current Security Onion ISO from their GitHub repo](https://github.com/Security-Onion-Solutions/securityonion/blob/3/main/DOWNLOAD_AND_VERIFY_ISO.md){:target="_blank"}. The download link for the latest ISO is under **Download and Verify**.
    ![](/assets/images/security-onion-images-win11-2026/01-iso-prep-win11-2026/01-iso-prep-win11-2026-013.png)
 
-2. Right-clik the link and select **Save Link As...** from the context menu.
+2. Right-click the link and select **Save Link As...** from the context menu.
    ![](/assets/images/security-onion-images-win11-2026/01-iso-prep-win11-2026/01-iso-prep-win11-2026-014.png)
 
 3. Save the file to the same location that you saved your OPNsense download.

@@ -25,9 +25,9 @@ In the first phase of configuration, you need to boot the virtual machine and ru
 
 3. On the **Keymap Selection** pane, leave the default option **Continue with default keymap** and press `Tab` to choose the **Select** option, then press `Enter`.
    ![](/assets/images/security-onion-images-win11-2026/04-opn-sense-config-win11-2026/04-opn-sense-config-win11-2026-003.png)
-4. Leave the **Install (UFS) | ZFS GPT/UEFI Hybrid** option selectged and press `Enter` to select **OK**.
+4. Leave the **Install (UFS) | ZFS GPT/UEFI Hybrid** option selected and press `Enter` to select **OK**.
    ![](/assets/images/security-onion-images-win11-2026/04-opn-sense-config-win11-2026/04-opn-sense-config-win11-2026-004.png)
-5. Leave **Stripe | Stripe - No redunduncy** selected as the **ZFS Configuration** virtual device type. Press `Enter` to select **OK**.
+5. Leave **Stripe | Stripe - No redundancy** selected as the **ZFS Configuration** virtual device type. Press `Enter` to select **OK**.
    ![](/assets/images/security-onion-images-win11-2026/04-opn-sense-config-win11-2026/04-opn-sense-config-win11-2026-005.png)
 6. Press the space bar to select **da0** to select the target disk with a **\*** and press `Enter` to select **OK**.
    ![](/assets/images/security-onion-images-win11-2026/04-opn-sense-config-win11-2026/04-opn-sense-config-win11-2026-006.png)
@@ -73,7 +73,7 @@ With the OPNsense system installed and running, you now need to assign the three
    ![](/assets/images/security-onion-images-win11-2026/04-opn-sense-config-win11-2026/04-opn-sense-config-win11-2026-020.png)
 3. From the menu, select `1) Assign interfaces`.
    ![](/assets/images/security-onion-images-win11-2026/04-opn-sense-config-win11-2026/04-opn-sense-config-win11-2026-021.png)
-4. The next option is `Do you want to configure LAGGs now`. Enter `n` unless.
+4. The next option is `Do you want to configure LAGGs now`. Select `n` unless you want to configure link aggregation..
 5. Enter `n` for `Do you want to configure VLANs now?`.
 6. You are prompted to `Enter the WAN interface name`. You can choose from three interfaces: `em0`, `em1`, and `em2`, each of which display their MAC address. This is where you will use the MAC addresses you just collected to identify which network adapter MAC address is assigned to which network.
    ![](/assets/images/security-onion-images-win11-2026/04-opn-sense-config-win11-2026/04-opn-sense-config-win11-2026-022.png)

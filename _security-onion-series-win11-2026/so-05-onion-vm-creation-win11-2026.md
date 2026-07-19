@@ -27,7 +27,7 @@ Now it's time to create the Security Onion virtual machine (VM).
    ![](/assets/images/security-onion-images-win11-2026/05-onion-vm-creation-win11-2026/05-onion-vm-creation-win11-2026-004.png)
 5. VMware will detect the operating system type based on the ISO. Click **Next**.
    ![](/assets/images/security-onion-images-win11-2026/05-onion-vm-creation-win11-2026/05-onion-vm-creation-win11-2026-005.png)
-6. On the **Name the Virtual Machine** screen, enter a name for the OPNsense VM. I named mine **onion2026**. Then click the **Browse** button to select the location where the VM and its files will be saved to and stored.
+6. On the **Name the Virtual Machine** screen, enter a name for the Security Onion VM. I named mine **onion2026**. Then click the **Browse** button to select the location where the VM and its files will be saved to and stored.
    ![](/assets/images/security-onion-images-win11-2026/05-onion-vm-creation-win11-2026/05-onion-vm-creation-win11-2026-006.png)
 7. Select the folder where VMware stores the collection of files and other data that make up the virtual machine. I have created a folder on my local drive called **onion-virtual-machines**. Within that, I created a new folder and gave it the same name as the VM, **onion2026**. Navigate to the location where you want the VM stored and click **OK**. 
    ![](/assets/images/security-onion-images-win11-2026/05-onion-vm-creation-win11-2026/05-onion-vm-creation-win11-2026-007.png)
@@ -63,15 +63,15 @@ Now it's time to create the Security Onion virtual machine (VM).
    ![](/assets/images/security-onion-images-win11-2026/05-onion-vm-creation-win11-2026/05-onion-vm-creation-win11-2026-014.png)
 15. **Network Adapter 2** displays on the **Device** list. Click it and select the **Custom: Specific virtual network** radio button, then click the drop-down menu and select **HOME_NET_LAN** from the list of VMnets.
    ![](/assets/images/security-onion-images-win11-2026/05-onion-vm-creation-win11-2026/05-onion-vm-creation-win11-2026-015.png)
-16. You're done adding hardware to the OPNsense VM. Click **Close**.
+16. You're done adding hardware to the Security Onion VM. Click **Close**.
    ![](/assets/images/security-onion-images-win11-2026/05-onion-vm-creation-win11-2026/05-onion-vm-creation-win11-2026-016.png)
-17. Click **Finish** to close the **New Virtual Machine Wizard** and complete the creation of the OPNsense VM.
+17. Click **Finish** to close the **New Virtual Machine Wizard** and complete the creation of the Security Onion VM.
    ![](/assets/images/security-onion-images-win11-2026/05-onion-vm-creation-win11-2026/05-onion-vm-creation-win11-2026-017.png)
-18. The OPNsense VM appears in the left sidebar. Drag it into the **Security-Onion-2026** folder.
+18. The Security Onion VM appears in the left sidebar. Drag it into the **Security-Onion-2026** folder.
    ![](/assets/images/security-onion-images-win11-2026/05-onion-vm-creation-win11-2026/05-onion-vm-creation-win11-2026-018.png)
 19. Create a snapshot of the VM so that you can revert to this state if something goes wrong in the future. Look for the clock icon with the red plus sign in the menu bar to **Take a snapshot of this virtual machine**.
    ![](/assets/images/security-onion-images-win11-2026/05-onion-vm-creation-win11-2026/05-onion-vm-creation-win11-2026-019.png)
 20. In the Take snapshot dialog, enter a **Name** and **Description** for the snapshot and click **Take Snapshot**.
    ![](/assets/images/security-onion-images-win11-2026/05-onion-vm-creation-win11-2026/05-onion-vm-creation-win11-2026-020.png)
-21. You are now ready to start your OPNsense VM, install it, and configure it to handle the traffic for your local lab.
+21. You are now ready to start your Security Onion VM, install it, and configure it to handle the traffic for your local lab.
    ![](/assets/images/security-onion-images-win11-2026/05-onion-vm-creation-win11-2026/05-onion-vm-creation-win11-2026-021.png)

@@ -9,7 +9,7 @@ has_children: true
 {: .no_toc }
 
 {: .important }
-This is an updated version of my original tutorial about how to set up a virtualized lab environment monitored by Security Onion. You can see the original version from 2022, which uses macOS and VMware Fusion Pro, at [Security Onion Virtual Lab Tutorial: Introduction (MacOS, 2022)]({% link _security-onion-series-macos-2022/so-00-tutorial-intro-macos-2022.md %}).
+This is an updated version of my original tutorial about how to set up a virtualized lab environment monitored by Security Onion. You can see the original version from 2022, which uses macOS and VMware Fusion Pro, at [Security Onion Virtual Lab Tutorial: Introduction (macOS, 2022)]({% link _security-onion-series-macos-2022/so-00-tutorial-intro-macos-2022.md %}).
 
 1. TOC
 {:toc}
@@ -35,11 +35,11 @@ The basic components of my virtual lab will be:
 
 This set of how-to articles will make up a tutorial on everything I needed to do to create a Security Onion-monitored virtual lab on a Windows computer. Just that part itself is a considerable amount of work... and it doesn't always work for me. I think the articles provide good lessons on a variety of skills needed to administer virtual machines, manage a network, and more. Here's what the first articles will cover:
 
-1. [Prepare OPNsense and Security Onion Installation Media]({% link _security-onion-series-win11-2026/so-01-prepare-media-win11-2026.md %}): Instructions on downloading and validating OPNsense and Security Onion and preparing them for installation in VMware Fusion Pro.
+1. [Prepare OPNsense and Security Onion Installation Media]({% link _security-onion-series-win11-2026/so-01-prepare-media-win11-2026.md %}): Instructions on downloading and validating OPNsense and Security Onion and preparing them for installation in VMware Workstation Pro.
 
    * **Note:** Installation instructions for other VMs, like Kali or Metasploitable, are out of scope for this tutorial, but I hope to come back and cover them later.
 
-2. [Create VMware Private Virtual Networks for the Security Onion Environment]({% link _security-onion-series-win11-2026/so-02-vmw-network-setup-win11-2026.md %}): Create private virtual networks within VMware Fusion Pro.
+2. [Create VMware Private Virtual Networks for the Security Onion Environment]({% link _security-onion-series-win11-2026/so-02-vmw-network-setup-win11-2026.md %}): Create private virtual networks within VMware Workstation Pro.
 3. [Create the OPNsense Virtual Machine]({% link _security-onion-series-win11-2026/so-03-opn-sense-vm-creation-win11-2026.md %}): Create a virtual machine where you will install and configure OPNsense.
 4. [Configure the OPNsense Virtual Machine]({% link _security-onion-series-win11-2026/so-04-opn-sense-config-win11-2026.md %}): Set up OPNsense and use it to create the routing capabilities you need for your private virtual networks.
 5. [Create the Security Onion Virtual Machine]({% link _security-onion-series-win11-2026/so-05-onion-vm-creation-win11-2026.md %}): Create a virtual machine where you will install and configure Security Onion.
@@ -53,7 +53,7 @@ This tutorial requires you to have some familiarity with and knowledge of deskto
 * **Virtualization Platform:** [VMware Workstation Pro](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion), a Type 2 hypervisor for Windows. When I started using virtual machines at home, I tried [VirtualBox](https://www.virtualbox.org/){:target="_blank"}, which is free, and [Parallels](https://www.parallels.com/){:target="_blank"}, which I paid for. I've had lots of problems with both. That could be my fault. But the $199 I paid for VMware Fusion Pro for my Mac was definitely worth it. VMs I create on Fusion Pro on a Mac or on Workstation Pro on a PC work so much faster and more reliably for me.
 
    {: .note }
-   I started using VMware Fusion Pro for Mac in 2020, and have also used more professional-grade VMware virtualization products in the workplace. VMware generally set the standard for virtualization. Since its acquisition by Broadcom peoples' opinions have been changing about the VMware products, although both Workstation Pro and Fusion Pro are now free. I'm not sure what I think; the situation is certainly evolving.
+   I started using VMware Fusion Pro for Mac in 2020, and have also used more professional-grade VMware virtualization products in the workplace. VMware generally set the standard for virtualization. Since its acquisition by Broadcom people's opinions have been changing about the VMware products, although both Workstation Pro and Fusion Pro are now free. I'm not sure what I think; the situation is certainly evolving.
 
 * **Command-line Interface:** I use Windows PowerShell as my command-line interface on the Windows host machine.
 * **Web Browser:** You will also need a web browser, both on the host operating system and in at least one of the VMs connected to the lab. I typically use [Firefox](https://www.firefox.com/){:target="_blank"}.
