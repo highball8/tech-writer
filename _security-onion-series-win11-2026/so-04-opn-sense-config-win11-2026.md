@@ -266,7 +266,7 @@ Since I am using OPNsense as a router, and because I don't want its firewall int
 
 ### Test Network Connectivity and DHCP IP Address Distribution
 
-If you have followed along this far, you have created the network environment. You are already testing the functionality of the EXTERNAL_NET_LAN (10.10.9.0/24) because you are using a Kali VM on that network to access the OPNsense management GUI. And you can also see its IP address by going to **Services > Dnsmasq DNS & DHCP > Leases**.
+If you have followed along this far, you have virtualized the necessary network infrastructure. You are already testing the functionality of the EXTERNAL_NET_LAN (10.10.9.0/24) because you are using a Kali VM on that network to access the OPNsense management GUI. And you can also see its IP address by going to **Services > Dnsmasq DNS & DHCP > Leases**.
 ![](/assets/images/security-onion-images-win11-2026/04-opn-sense-config-win11-2026/04-opn-sense-config-win11-2026-070.png)
 
 To test the functionality of the HOME_NET_LAN (10.10.10.0/24) where you will deploy Security Onion, you need to add something to that network and see if it gets an IP address and is discoverable. In my example, I have added a third virtual machine to the **Security-Onion-2026** folder in VMware Workstation Pro. This is a Metasploitable 3 VM that I created from their GitHub repo. I have set the virtual network adapter on this VM to the **HOME_NET_LAN** network.

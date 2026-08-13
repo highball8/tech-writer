@@ -51,6 +51,9 @@ collections:
   security-onion-series-win11-2026:
     output: true
     permalink: /tutorials/security-onion-series-win11-2026/:name/
+  # security-onion-cyber-range-2026:
+  #   output: true
+  #   permalink: /tutorials/security-onion-cyber-range-2026/:name/
   security-onion-series-macos-2022:
     output: true
     permalink: /tutorials/security-onion-series-macos-2022/:name/

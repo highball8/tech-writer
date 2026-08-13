@@ -44,7 +44,7 @@ Now it's time to create the Security Onion virtual machine (VM).
 
 13. Click **Network Adapter**.
     ![](/assets/images/security-onion-images-macos-2022/05-onion-vm-creation-macos-2022/05-onion-vm-creation-macos-2022-013.png)
-14. This is the Security Onion VM's first network adapter. This should be attached to the management network, where users (security analysts) can access and manage Security Onion using its web interface, the Security Onion Console, or using the command line via SSH. My environment doesn't have a management network, so for now I will select **Bridged Networking** > **Autodetect**. This option adds the VM to my home network with its own IP address so that my host system Mac can reach it, though it is really sharing the Mac's network connection.
+14. This is the Security Onion VM's first network adapter. This should be attached to the management network, where users (security analysts) can access and manage Security Onion using its web interface, the Security Onion Console, or using the command line via SSH. I have not created a management network, so for now I will select **Bridged Networking** > **Autodetect**. This option adds the VM to my home network with its own IP address so that my host system Mac can reach it, though it is really sharing the Mac's network connection.
     ![](/assets/images/security-onion-images-macos-2022/05-onion-vm-creation-macos-2022/05-onion-vm-creation-macos-2022-014.png)
 15. Security Onion requires another network adapter, so click **Add Device...**.
     ![](/assets/images/security-onion-images-macos-2022/05-onion-vm-creation-macos-2022/05-onion-vm-creation-macos-2022-015.png)

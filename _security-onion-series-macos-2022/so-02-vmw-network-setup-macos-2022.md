@@ -28,7 +28,7 @@ In this scenario you use the VMware's networking feature to create two private v
 Once you have created the private virtual networks, you will attach the virtual network adapters of the various virtual machines to these networks.
 
 {: .note}
-A note on the network names: I got the names **EXTERNAL_NET** and **HOME_NET** from one of the most important parts of Security Onion, the Suricata intrusion detection system (IDS). Suricata signature-based detection rules (which are, in turn, based on Snort, an earlier IDS), use `$EXTERNAL_NET` and `$HOME_NET` to establish traffic directionality---what is on the network that you manage and are seeking to monitor and detect is `$HOME_NET`. What is outside of your network is everything else, `$EXTERNAL_NET`. In many cases, malicious traffic needs to either come from or go to `$EXTERNAL_NET` for it to match a Suricata rule, which is why you need to declare both networks to build the lab environment.
+A note on the network names: I got the names **EXTERNAL_NET** and **HOME_NET** from one of the most important parts of Security Onion, the Suricata intrusion detection system (IDS). Suricata signature-based detection rules (which are, in turn, based on Snort, an earlier IDS), use `$EXTERNAL_NET` and `$HOME_NET` to establish traffic directionality---what is on the network that you manage and are seeking to monitor and detect is `$HOME_NET`. What is outside of your network is everything else, `$EXTERNAL_NET`. In many cases, malicious traffic needs to either come from or go to `$EXTERNAL_NET` for it to match a Suricata rule, which is why you need to declare both networks to define the lab environment.
 
 * OPNsense router:
 
@@ -62,7 +62,7 @@ This diagram depicts the network components and topology that I am using in this
    ![](/assets/images/security-onion-images-macos-2022/02-vmw-network-setup-macos-2022/02-vmw-network-setup-macos-2022-003.png)
 4. Enter the host machine's administrator password and click **OK**.
    ![](/assets/images/security-onion-images-macos-2022/02-vmw-network-setup-macos-2022/02-vmw-network-setup-macos-2022-004.png)
-5. Click the plus icon (**+**) to create a private virtual network for your lab environment.
+5. Click the plus icon (**+**) to create a private virtual network for your lab environment or "cyber range."
    ![](/assets/images/security-onion-images-macos-2022/02-vmw-network-setup-macos-2022/02-vmw-network-setup-macos-2022-005.png)
 6. A network appears under **Custom** > **Private to my Mac**. The name will start with **vmnet**. Click the network name once so that the name becomes editable.
    ![](/assets/images/security-onion-images-macos-2022/02-vmw-network-setup-macos-2022/02-vmw-network-setup-macos-2022-006.png)

@@ -11,14 +11,14 @@ has_children: true
 {: .important }
 >I created this tutorial in mid-2022. I am adding this note in July 2026. So much of the content is four years old and has accuracy and currency issues, particularly when it describes older versions of Security Onion and OPNsense. For example, the version of Security Onion used is 2.3; Security Onion is now on version 3, and 2.3 is considered end-of-life.
 >
-> Perhaps more importantly, I created this on an older Apple computer with an Intel processor with x86-64 architecture. x86-64 architecture is much more favorable for creating this type of environment. Security Onion is designed to run on x86-64. I am not even sure if I would be able to repeat these steps on a current Apple computer, which now use Apple Silicon processors with an ARM64/aarch64 architecture. It would be a lot of work to even get some of these virtual machines to run on that type of computer, and the performance and behavior could vary.
+> Perhaps more importantly, I created this on an older Apple computer with an Intel processor with x86-64 architecture. x86-64 architecture is much more favorable for virtualization. Security Onion is designed to run on x86-64. I am not even sure if I would be able to repeat these steps on a current Apple computer, which now use Apple Silicon processors with an ARM64/aarch64 architecture. It would be a lot of work to even get some of these virtual machines to run on that type of computer, and the performance and behavior could vary.
 >
 > I am leaving this series up for now as it is still a useful conceptual approach on how you set up the networks, create the virtual machines, and install the software.
 
 1. TOC
 {:toc}
 
-This series of how-to articles describes how to set up your own virtual lab for information security research using virtual machines (VMs). I am using [VMware Fusion Pro](https://store-us.vmware.com/fusionpro_buy_new){:target="_blank"}, which is a Type 2 hypervisor used for desktop virtualization on host operating systems running macOS.
+This series of how-to articles describes how to set up your own virtual lab---or "cyber range"---for information security research using virtual machines (VMs). I am using [VMware Fusion Pro](https://store-us.vmware.com/fusionpro_buy_new){:target="_blank"}, which is a Type 2 hypervisor used for desktop virtualization on host operating systems running macOS.
 
 The centerpiece of the lab is a virtual machine (VM) running [Security Onion](https://securityonionsolutions.com/){:target="_blank"}, which is a leading open-source network intrusion detection system (NIDS) and network security monitor (NSM). Security Onion uses containers to give users a wide variety of tools that allow for network monitoring and alerting, threat hunting, and more. It utilizes well-known, widely used open-source applications, including:
 
@@ -26,9 +26,9 @@ The centerpiece of the lab is a virtual machine (VM) running [Security Onion](ht
 * [Suricata](https://suricata.readthedocs.io/en/suricata-6.0.5/what-is-suricata.html){:target="_blank"} is a signature-based network intrusion detection system originally developed by the Open Information Security Foundation.
 * The [ELK](https://www.elastic.co/what-is/elk-stack){:target="_blank"} stack, for Elasticsearch, Logstash, and Kibana. The ELK stack serves as a security information and event management (SIEM) platform, receiving Security Onion's log events from Logstash (as well as Filebeat). Elasticsearch is the search and analytics engine. Kibana is a user-interface and visualization tool.
 
-Security Onion is set up on a private network with a network interface card (NIC) that works in promiscuous mode to "sniff" all the traffic traversing the network. In practice this can be done by connecting Security Onion to a SPAN or TAP port. Since I am creating my environment virtually on a MacBook Pro laptop, I will need to create some network infrastructure that will allow me to sniff traffic with Security Onion.
+Security Onion is set up on a private network with a network interface card (NIC) that works in promiscuous mode to "sniff" all the traffic traversing the network. In practice this can be done by connecting Security Onion to a SPAN or TAP port. Since I am creating my lab virtually on a MacBook Pro laptop, I will need to create some network infrastructure that will allow me to sniff traffic with Security Onion.
 
-The basic components of my virtual lab will be:
+The basic components of my cyber range will be:
 
 * A virtual machine running [OPNsense](https://docs.opnsense.org/intro.html){:target="_blank"}, an open-source firewall and networking platform. I will use the OPNsense VM as a virtual router to create a local area network (LAN) that the other lab virtual machines will connect to. OPNsense provides the LAN so that these virtual machines can talk to each other, and it can also connect them to the wide area network (WAN), or public internet, for things like updates. Using OPNsense also gives me the ability to connect Security Onion to the LAN and sniff traffic.
 * A virtual machine running Security Onion. This tutorial will go over how to set up a Security Onion deployment that monitors the virtual lab and some basics on what Security Onion does and how to use it.
@@ -67,4 +67,4 @@ This tutorial requires you to have some familiarity with and knowledge of deskto
 I use angle brackets (`<` and `>`) to enclose placeholder text for filenames, paths, URLs, software versions, or anything where the value may be different for you than it is for me.
 
 {: .new }
-I have to recognize the educational resource that set me on the right path for understanding the creation of the network environment needed for a Security Onion deployment. I learned the necessary concepts back in 2020 in a YouTube video from [I.T Security Labs](https://www.youtube.com/@ITSecurityLabs/featured){:target="_blank"} called [Set up Security Onion in vMware workstation or Virtualbox using pfSense port mirror \| Kibana Graphs](https://www.youtube.com/watch?v=c2ozyJ9rwOQ){:target="_blank"}. It took me a minute to understand all of it. Thank you to @ITSecurityLabs.
+I have to recognize the educational resource that set me on the right path for understanding how to properly virtualize the network infrastructure needed for a Security Onion deployment. I learned the necessary concepts back in 2020 in a YouTube video from [I.T Security Labs](https://www.youtube.com/@ITSecurityLabs/featured){:target="_blank"} called [Set up Security Onion in vMware workstation or Virtualbox using pfSense port mirror \| Kibana Graphs](https://www.youtube.com/watch?v=c2ozyJ9rwOQ){:target="_blank"}. It took me a minute to understand all of it. Thank you to @ITSecurityLabs.
