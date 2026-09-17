@@ -13,7 +13,7 @@ parent: "Create a Static Site Using Jekyll: Introduction"
 
 This is not an in-depth course on Jekyll. This site you are looking at represents the entirety of my Jekyll experience, so in the spirit of keeping it basic, I'm only going to cover what I needed to create what you are looking at.
 
-1. TOC
+- TOC
 {:toc}
 
 ## Adding Images to Your Jekyll Posts and Pages

@@ -11,7 +11,7 @@ has_children: true
 {: .important }
 This is an updated version of my original tutorial about how to set up a virtualized lab environment, or cyber range, monitored by Security Onion. You can see the original version from 2022, which uses macOS and VMware Fusion Pro, at [Security Onion Virtual Lab Tutorial: Introduction (macOS, 2022)]({% link _security-onion-series-macos-2022/so-00-tutorial-intro-macos-2022.md %}).
 
-1. TOC
+- TOC
 {:toc}
 
 This series of how-to articles describes how to set up your own virtual lab---or "cyber range"---for information security researchusing virtual machines (VMs). I am using [VMware Workstation Pro](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion){:target="_blank"}, which is a Type 2 hypervisor used for desktop virtualization on host operating systems running Windows.

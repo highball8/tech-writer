@@ -8,7 +8,7 @@ parent: "Operating a Cyber Range with Security Onion—Windows 11, 2026"
 # Using Security Onion and the Security Onion Console
 {: .no_toc }
 
-1. TOC
+- TOC
 {:toc}
 
 This section provides a basic overview of how to start using Security Onion. Security Onion does a lot, hopefully I can show you some of those things across these pieces. This section provides a quick introduction to the virtual machine's command line and the Security Onion Console. There are also some steps on how to completing configuration by specifying your **HOME_NET** network, testing Security Onion's ability to detect traffic, and updating Security Onion.

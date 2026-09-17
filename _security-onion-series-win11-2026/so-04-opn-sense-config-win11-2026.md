@@ -8,7 +8,7 @@ parent: "Security Onion: Creating a Virtual Lab Environment—Windows 11, 2026"
 # Configure the OPNsense Virtual Machine
 {: .no_toc }
 
-1. TOC
+- TOC
 {:toc}
 
 ## Install OPNsense on the Virtual Machine

@@ -8,7 +8,7 @@ parent: "Security Onion: Creating a Virtual Lab Environment—Windows 11, 2026"
 # Create VMware Private Virtual Networks for the Security Onion Environment
 {: .no_toc }
 
-1. TOC
+- TOC
 {:toc}
 
 These steps detail how you can use VMware Workstation Pro's networking capabilities to create two **VMware private virtual networks**. You will connect your different virtual machines (VMs) to these networks so that the VMs can interact with one another, and, if necessary, reach out to the public internet to download updates, browse the internet, etc.

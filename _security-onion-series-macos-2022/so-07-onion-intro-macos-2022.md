@@ -13,7 +13,7 @@ parent: "Security Onion: Creating a Virtual Lab Environment—macOS, 2022"
 >
 > For a newer version of this content, see [Using Security Onion and the Security Onion Console]({% link _security-onion-cyber-range-2026/so-range-01-intro-to-security-onion.md %}).
 
-1. TOC
+- TOC
 {:toc}
 
 This section provides a basic overview of how you can use Security Onion. Security Onion can do so much, and that is all out of scope for this tutorial, though I hope to fill in the gaps later. This section provides a quick introduction to the Security Onion Console and in particular its **Alerts** page and how to use it.

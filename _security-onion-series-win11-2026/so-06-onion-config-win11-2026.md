@@ -8,7 +8,7 @@ parent: "Security Onion: Creating a Virtual Lab Environment—Windows 11, 2026"
 # Configure the Security Onion Virtual Machine
 {: .no_toc }
 
-1. TOC
+- TOC
 {:toc}
 
 ## Complete Base OS Installation on the Security Onion Virtual Machine

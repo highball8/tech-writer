@@ -11,7 +11,7 @@ parent: "Security Onion: Creating a Virtual Lab Environment—macOS, 2022"
 {: .important }
 I created this tutorial in mid-2022. In mid-2026 the content is over four years old and has accuracy and currency issues, particularly when it describes older versions of Security Onion and OPNsense. While this tutorial is no longer current, I am leaving it up because it is a professional writing sample that I put a lot of work into and it may still be useful to some readers. For more information, see [Security Onion: Creating a Virtual Lab Environment---macOS, 2022]({% link _security-onion-series-macos-2022/so-00-tutorial-intro-macos-2022.md %}).
 
-1. TOC
+- TOC
 {:toc}
 
 In this tutorial you will create two virtual machines (VMs): one OPNsense VM to provide routing for virtualized lab networks, and one VM to run Security Onion. On this page you are going to download the installation media needed to create those VMs and verify that the installation media is valid.

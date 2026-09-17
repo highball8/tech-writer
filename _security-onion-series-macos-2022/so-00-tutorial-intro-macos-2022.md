@@ -15,7 +15,7 @@ has_children: true
 >
 > I am leaving this series up for now as it is still a useful conceptual approach on how you set up the networks, create the virtual machines, and install the software.
 
-1. TOC
+- TOC
 {:toc}
 
 This series of how-to articles describes how to set up your own virtual lab---or "cyber range"---for information security research using virtual machines (VMs). I am using [VMware Fusion Pro](https://store-us.vmware.com/fusionpro_buy_new){:target="_blank"}, which is a Type 2 hypervisor used for desktop virtualization on host operating systems running macOS.
