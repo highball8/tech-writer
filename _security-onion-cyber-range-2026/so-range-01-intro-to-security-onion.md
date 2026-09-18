@@ -43,12 +43,12 @@ If you prefer to use SSH keys for authentication, you can add your SSH key pair 
 
 1. `$ ssh-copy-id -i ~/.ssh/<public-key-name>.pub <username>@<management-network-ip-address>`
 2. Enter your password.
-3. Once your SSH public key has been added to the VM, you can log in with ssh -i ~/.ssh/<public-key-name> <username>@<management-network-ip-address>`
+3. Once your SSH public key has been added to the VM, you can log in with `ssh -i ~/.ssh/<public-key-name> <username>@<management-network-ip-address>`
 
 ##### SSH Key Authentication: Windows 11
 
 To copy your SSH public key from a Windows computer to your Security Onion VM, use this equivalent version of `ssh-copy-id` for Windows:  
-1. type $env:USERPROFILE\.ssh\<public-key-name>.pub | ssh <username>@<management-network-ip-address> "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+1. type `$env:USERPROFILE\.ssh\<public-key-name>.pub | ssh <username>@<management-network-ip-address> "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"`
 2. Enter your password.
 3. Once your SSH public key has been added to the VM, you can log in with `ssh -i $env:USERPROFILE\.ssh\<public-key-name> <username>@<management-network-ip-address>`.
 
@@ -123,7 +123,7 @@ First, you need to complete a few more configuration tasks.
 
 ## Security Onion Configuration: Set Home Networks
 
-As described in [Create VMware Private Virtual Networks for the Security Onion Environment](({% link _security-onion-cyber-range-2026/so-range-01-intro-to-security-onion.md %})), you designed this environment with a simulated local-area network (LAN) called HOME_NET_LAN, with an IP address space of 10.10.10.0/24. Now you need to specify this network as the HOME_NET that Suricata and Zeek are monitoring and defending. You used to declare this network as part of the initial configuration process for Security Onion, but now you can do it through the Security Onion Console.
+As described in [Create VMware Private Virtual Networks for the Security Onion Environment]({% link _security-onion-cyber-range-2026/so-range-01-intro-to-security-onion.md %}), you designed this environment with a simulated local-area network (LAN) called HOME_NET_LAN, with an IP address space of 10.10.10.0/24. Now you need to specify this network as the HOME_NET that Suricata and Zeek are monitoring and defending. You used to declare this network as part of the initial configuration process for Security Onion, but now you can do it through the Security Onion Console.
 
 1. In the Security Onion Console, click the **Administration** link in the left sidebar, then click **Configuration**. Under Analyst Quick Links > Suricata, click Suricata Home Networks.
    ![](/assets/images/security-onion-cyber-range-2026/so-range-01/so-range-01-011.png)
@@ -216,7 +216,7 @@ Security Onion is actively developed and maintained and makes updates available 
 
 ## Clear Security Onion Event Data
 
-Since you ran test data, you may want to reset or clear the event data in Security Onion for when you start simulating your own attacks on the netowrk. You can reset the logs and logging configurations of your Security Onion instance by running these two commands:
+Since you ran test data, you may want to reset or clear the event data in Security Onion for when you start simulating your own attacks on the network. You can reset the logs and logging configurations of your Security Onion instance by running these two commands:
 
 ```
 sudo so-nsm-clear -h
